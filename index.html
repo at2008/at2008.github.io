@@ -364,8 +364,25 @@
       
         
           
-          
-          
+          elementary OS中第一步：安装numlockx，输入命令
+1sudo apt-get install numlockx
+第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #
+1# activate-numlock=true.
+结果如下图：
+
+最后：重启或者注销后。小键盘就可以自动启动了
+
+Tips: vim怎么插入内容呢？
+
+快捷键 i 切换到插入模式
+方向键调整光标到插入位置
+复制粘贴代码
+Esc键退出插入模式，回到默认的命令模式
+输入命令 :wq 表示保存并退出
+
+
+ferenOS，Linux Min
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/#more" rel="contents">
@@ -775,7 +792,7 @@ VS IDE自动生成例子12345678910
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

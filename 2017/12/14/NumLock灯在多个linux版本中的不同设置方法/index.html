@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux,NumLock," />
 
 
 
@@ -83,17 +83,23 @@
 
 
 
-<meta name="description" content="心存善念 随心而动">
+<meta name="description" content="elementary OS中第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎">
+<meta name="keywords" content="Linux,NumLock">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NumLock灯在多个linux版本中的不同设置方法">
 <meta property="og:url" content="http://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="心存善念 随心而动">
+<meta property="og:description" content="elementary OS中第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-13T16:27:18.292Z">
+<meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-eos.png">
+<meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png">
+<meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu.png">
+<meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png">
+<meta property="og:updated_time" content="2017-12-13T16:59:44.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NumLock灯在多个linux版本中的不同设置方法">
-<meta name="twitter:description" content="心存善念 随心而动">
+<meta name="twitter:description" content="elementary OS中第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎">
+<meta name="twitter:image" content="http://slowread.cn/images/material/linux-numlock-eos.png">
 
 
 
@@ -360,7 +366,65 @@
       
 
       
-        
+        <h2 id="elementary-OS中"><a href="#elementary-OS中" class="headerlink" title="elementary OS中"></a>elementary OS中</h2><p>第一步：安装numlockx，输入命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
+<p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># activate-numlock=true.</span><br></pre></td></tr></table></figure>
+<p>结果如下图：</p>
+<p><img src="http://slowread.cn/images/material/linux-numlock-eos.png" alt="image"></p>
+<p>最后：重启或者注销后。小键盘就可以自动启动了</p>
+<blockquote>
+<p>Tips: vim怎么插入内容呢？</p>
+<ul>
+<li>快捷键 i 切换到插入模式</li>
+<li>方向键调整光标到插入位置</li>
+<li>复制粘贴代码</li>
+<li>Esc键退出插入模式，回到默认的命令模式</li>
+<li>输入命令 :wq 表示保存并退出</li>
+</ul>
+</blockquote>
+<h2 id="ferenOS，Linux-Mint"><a href="#ferenOS，Linux-Mint" class="headerlink" title="ferenOS，Linux Mint"></a>ferenOS，Linux Mint</h2><p>第一步：安装numlockx，输入命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
+<p>第二步：用 vim 打开 /etc/lightdm/lightdm.conf文件，最后一行添加 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">greeter-setup-script=/usr/bin/numlockx on</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Tips: 敲入下面命令编辑文件</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/lightdm/lightdm.conf</span><br></pre></td></tr></table></figure>
+<p>结果如下图：</p>
+<p><img src="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png" alt="image"></p>
+<p>同样的，重启或者注销后，生效。</p>
+<h2 id="CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><a href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based" class="headerlink" title="CentOS ，Scientific Linux，Fedora and other rpm based"></a>CentOS ，Scientific Linux，Fedora and other rpm based</h2><ul>
+<li>先安装numlockx,可以去opensuse的软件中心里找rpm包进行安装</li>
+<li>下载地址：<a href="https://pkgs.org/download/numlockx" target="_blank" rel="noopener">https://pkgs.org/download/numlockx</a></li>
+<li>安装命令： sudo rpm -i numlockx-1.2-6.el7.nux.x86_64.rpm</li>
+<li><ul>
+<li>或者：sudo yum install numlockx</li>
+</ul>
+</li>
+<li>先备份 cp /etc/gdm/Init/Default /etc/gdm/Init/Default_backup</li>
+<li>再修改 vim /etc/gdm/Init/Default</li>
+<li>在exit 0之前加上/usr/bin/numlockx on,重启就会发现小键盘已经打开了！</li>
+</ul>
+<h2 id="Ubuntu-and-other-debian-based"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</h2><h3 id="针对-gdm"><a href="#针对-gdm" class="headerlink" title="针对 gdm"></a>针对 gdm</h3><ul>
+<li>安装 numlockx ,在终端中输入命令：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
+<ul>
+<li>配置 numlockx </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/gdm/Init/Default</span><br></pre></td></tr></table></figure>
+<p>在 exit 0 之前，添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#set numlock on</span><br><span class="line">if [ -x /usr/bin/numlockx ]; then</span><br><span class="line">/usr/bin/numlockx on</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<p>结果如下图：</p>
+<p><img src="http://slowread.cn/images/material/linux-numlock-ubuntu.png" alt="image"></p>
+<h3 id="针对-lightdm"><a href="#针对-lightdm" class="headerlink" title="针对 lightdm"></a>针对 lightdm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/lightdm/lightdm.conf</span><br></pre></td></tr></table></figure>
+<p>最后一行添加下面语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">greeter-setup-script=/usr/bin/numlockx on</span><br></pre></td></tr></table></figure>
+<p>结果如下图：</p>
+<p><img src="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png" alt="image"></p>
+<p>重启或者注销后，生效。</p>
+
       
     </div>
     
@@ -403,6 +467,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/NumLock/" rel="tag"># NumLock</a>
+          
+        </div>
       
 
       
@@ -511,8 +583,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -544,7 +625,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -576,6 +657,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#elementary-OS中"><span class="nav-number">1.</span> <span class="nav-text"><a href="#elementary-OS&#x4E2D;" class="headerlink" title="elementary OS&#x4E2D;"></a>elementary OS&#x4E2D;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ferenOS，Linux-Mint"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ferenOS&#xFF0C;Linux-Mint" class="headerlink" title="ferenOS&#xFF0C;Linux Mint"></a>ferenOS&#xFF0C;Linux Mint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><span class="nav-number">3.</span> <span class="nav-text"><a href="#CentOS-&#xFF0C;Scientific-Linux&#xFF0C;Fedora-and-other-rpm-based" class="headerlink" title="CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based"></a>CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu-and-other-debian-based"><span class="nav-number">4.</span> <span class="nav-text"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#针对-gdm"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#&#x9488;&#x5BF9;-gdm" class="headerlink" title="&#x9488;&#x5BF9; gdm"></a>&#x9488;&#x5BF9; gdm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#针对-lightdm"><span class="nav-number">4.2.</span> <span class="nav-text"><a href="#&#x9488;&#x5BF9;-lightdm" class="headerlink" title="&#x9488;&#x5BF9; lightdm"></a>&#x9488;&#x5BF9; lightdm</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
