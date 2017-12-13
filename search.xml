@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[推荐2个好看的linux发行版本]]></title>
+    <url>%2F2017%2F12%2F14%2F%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[NumLock灯在多个linux版本中的不同设置方法]]></title>
     <url>%2F2017%2F12%2F14%2FNumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[elementary OS第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图： 最后：重启或者注销后。小键盘就可以自动启动了 Tips: vim怎么插入内容呢？ 快捷键 i 切换到插入模式 方向键调整光标到插入位置 复制粘贴代码 Esc键退出插入模式，回到默认的命令模式 输入命令 :wq 表示保存并退出 ferenOS，Linux Mint第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/lightdm.conf文件，最后一行添加 1greeter-setup-script=/usr/bin/numlockx on Tips: 敲入下面命令编辑文件 1sudo vi /etc/lightdm/lightdm.conf 结果如下图： 同样的，重启或者注销后，生效。 CentOS ，Scientific Linux，Fedora and other rpm based 先安装numlockx,可以去opensuse的软件中心里找rpm包进行安装 下载地址：https://pkgs.org/download/numlockx 安装命令： sudo rpm -i numlockx-1.2-6.el7.nux.x86_64.rpm 或者：sudo yum install numlockx 先备份 cp /etc/gdm/Init/Default /etc/gdm/Init/Default_backup 再修改 vim /etc/gdm/Init/Default 在exit 0之前加上/usr/bin/numlockx on,重启就会发现小键盘已经打开了！ Ubuntu and other debian based基于 gdm 安装 numlockx ,在终端中输入命令： 1sudo apt-get install numlockx 配置 numlockx 1sudo gedit /etc/gdm/Init/Default 在 exit 0 之前，添加如下内容： 1234#set numlock onif [ -x /usr/bin/numlockx ]; then/usr/bin/numlockx onfi 结果如下图： 基于 lightdm1sudo gedit /etc/lightdm/lightdm.conf 最后一行添加下面语句： 1greeter-setup-script=/usr/bin/numlockx on 结果如下图： 重启或者注销后，生效。]]></content>

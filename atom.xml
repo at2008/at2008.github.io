@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2017-12-13T17:04:18.792Z</updated>
+  <updated>2017-12-13T17:21:31.665Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>推荐2个好看的linux发行版本</title>
+    <link href="http://slowread.cn/2017/12/14/%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
+    <id>http://slowread.cn/2017/12/14/推荐2个好看的linux发行版本/</id>
+    <published>2017-12-13T17:21:31.000Z</published>
+    <updated>2017-12-13T17:21:31.665Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>NumLock灯在多个linux版本中的不同设置方法</title>
