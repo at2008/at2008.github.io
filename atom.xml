@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2017-12-13T14:54:19.575Z</updated>
+  <updated>2017-12-13T16:27:18.292Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NumLock灯在多个linux版本中的不同设置方法</title>
+    <link href="http://slowread.cn/2017/12/14/NumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/"/>
+    <id>http://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/</id>
+    <published>2017-12-13T16:27:18.000Z</published>
+    <updated>2017-12-13T16:27:18.292Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>C#本质论笔记 第2章 数据类型</title>
