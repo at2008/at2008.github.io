@@ -83,22 +83,22 @@
 
 
 
-<meta name="description" content="elementary OS第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么">
+<meta name="description" content="elementary OS第一步：安装numlockx，输入命令 sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # # activate-numlock=true.  结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么插">
 <meta name="keywords" content="Linux,NumLock">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NumLock灯在多个linux版本中的不同设置方法">
 <meta property="og:url" content="http://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="elementary OS第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么">
+<meta property="og:description" content="elementary OS第一步：安装numlockx，输入命令 sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # # activate-numlock=true.  结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么插">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-eos.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png">
-<meta property="og:updated_time" content="2017-12-13T17:04:18.792Z">
+<meta property="og:updated_time" content="2017-12-14T06:53:28.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NumLock灯在多个linux版本中的不同设置方法">
-<meta name="twitter:description" content="elementary OS第一步：安装numlockx，输入命令 1sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # 1# activate-numlock=true. 结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么">
+<meta name="twitter:description" content="elementary OS第一步：安装numlockx，输入命令 sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # # activate-numlock=true.  结果如下图：  最后：重启或者注销后。小键盘就可以自动启动了  Tips: vim怎么插">
 <meta name="twitter:image" content="http://slowread.cn/images/material/linux-numlock-eos.png">
 
 
@@ -367,10 +367,10 @@
 
       
         <h2 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h2><p>第一步：安装numlockx，输入命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
-<p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># activate-numlock=true.</span><br></pre></td></tr></table></figure>
-<p>结果如下图：</p>
+<pre><code>sudo apt-get install numlockx
+</code></pre><p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
+<pre><code># activate-numlock=true. 
+</code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-eos.png" alt="image"></p>
 <p>最后：重启或者注销后。小键盘就可以自动启动了</p>
 <blockquote>
@@ -384,14 +384,14 @@
 </ul>
 </blockquote>
 <h2 id="ferenOS，Linux-Mint"><a href="#ferenOS，Linux-Mint" class="headerlink" title="ferenOS，Linux Mint"></a>ferenOS，Linux Mint</h2><p>第一步：安装numlockx，输入命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
-<p>第二步：用 vim 打开 /etc/lightdm/lightdm.conf文件，最后一行添加 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">greeter-setup-script=/usr/bin/numlockx on</span><br></pre></td></tr></table></figure>
-<blockquote>
+<pre><code>sudo apt-get install numlockx
+</code></pre><p>第二步：用 vim 打开 /etc/lightdm/lightdm.conf文件，最后一行添加 </p>
+<pre><code>greeter-setup-script=/usr/bin/numlockx on
+</code></pre><blockquote>
 <p>Tips: 敲入下面命令编辑文件</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/lightdm/lightdm.conf</span><br></pre></td></tr></table></figure>
-<p>结果如下图：</p>
+<pre><code>sudo vi /etc/lightdm/lightdm.conf 
+</code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png" alt="image"></p>
 <p>同样的，重启或者注销后，生效。</p>
 <h2 id="CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><a href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based" class="headerlink" title="CentOS ，Scientific Linux，Fedora and other rpm based"></a>CentOS ，Scientific Linux，Fedora and other rpm based</h2><ul>
@@ -407,21 +407,24 @@
 <li>在exit 0之前加上/usr/bin/numlockx on,重启就会发现小键盘已经打开了！</li>
 </ul>
 <h2 id="Ubuntu-and-other-debian-based"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</h2><h3 id="基于-gdm"><a href="#基于-gdm" class="headerlink" title="基于 gdm"></a>基于 gdm</h3><ul>
-<li>安装 numlockx ,在终端中输入命令：</li>
+<li><p>安装 numlockx ,在终端中输入命令：</p>
+<p>  sudo apt-get install numlockx</p>
+</li>
+<li><p>配置 numlockx </p>
+<p>  sudo gedit /etc/gdm/Init/Default</p>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install numlockx</span><br></pre></td></tr></table></figure>
-<ul>
-<li>配置 numlockx </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/gdm/Init/Default</span><br></pre></td></tr></table></figure>
 <p>在 exit 0 之前，添加如下内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#set numlock on</span><br><span class="line">if [ -x /usr/bin/numlockx ]; then</span><br><span class="line">/usr/bin/numlockx on</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-<p>结果如下图：</p>
+<pre><code>#set numlock on
+if [ -x /usr/bin/numlockx ]; then
+/usr/bin/numlockx on
+fi
+</code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-ubuntu.png" alt="image"></p>
-<h3 id="基于-lightdm"><a href="#基于-lightdm" class="headerlink" title="基于 lightdm"></a>基于 lightdm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit /etc/lightdm/lightdm.conf</span><br></pre></td></tr></table></figure>
-<p>最后一行添加下面语句：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">greeter-setup-script=/usr/bin/numlockx on</span><br></pre></td></tr></table></figure>
-<p>结果如下图：</p>
+<h3 id="基于-lightdm"><a href="#基于-lightdm" class="headerlink" title="基于 lightdm"></a>基于 lightdm</h3><pre><code>sudo gedit /etc/lightdm/lightdm.conf
+</code></pre><p>最后一行添加下面语句：</p>
+<pre><code>greeter-setup-script=/usr/bin/numlockx on
+</code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png" alt="image"></p>
 <p>重启或者注销后，生效。</p>
 
