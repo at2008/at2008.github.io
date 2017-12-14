@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Visual Studio Code VSCode 常用 插件 扩展]]></title>
+    <url>%2F2017%2F12%2F14%2FVisual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[界面主题 Monokai : VSCcode 内置主题 Agila : 包含多个主题 Dark-Dracula Theme : Dracula 风格主题里面比较好的 Nosferatu : Dracula 风格主题 monokai light : 白色，背景色类色默认的vs亮色主题背景 FlatUI : 包含多个主题 Flatland Monokai Theme : theme-dark-monokai : Monokai Dark Soda : Monokai Light : 图标主题 vscode-icons：Icons : 主要推荐 material icon theme : 备选 功能插件 C# : VSCode 开发 C# 必备 C# FixFormat : 格式化代码，好用 C# Extensions : 提高开发效率的扩展工具 Bracket Pair Colorizer ：对括号对进行着色，再也不会眼晕了。 Markdown All in One : All in One ，好用 markdownlint : 编写 Markdown 文件时智能提示，有助于养成好习惯。 Markdown Table Prettifier : Markdown 文件中，对表格进行强制格式化，看起来更整齐，舒服。 XML Tools ：作者 Josh Johnson - XML 格式化/Tree View XML Tools （备选） : 作者 Qub - 格式化XML文档 Alt+Shift+F Output Colorizer : 可以终端日志输出着色，实用 vscode-fileheader: 添加头header comment Setting Sync: 同步你的设置和插件]]></content>
+      <tags>
+        <tag>VSCode</tag>
+        <tag>插件</tag>
+        <tag>Visual Studio</tag>
+        <tag>Visual Studio Code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[推荐2个好看的linux发行版本]]></title>
     <url>%2F2017%2F12%2F14%2F%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%2F</url>
     <content type="text"><![CDATA[高清图片，加载时间有点长… elementary OS官网地址：http://www.elementary.io/ 界面截图 feren OS官网地址：https://ferenos.weebly.com/ 界面截图]]></content>
