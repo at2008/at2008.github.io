@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2017-12-14T05:27:12.521Z</updated>
+  <updated>2017-12-14T06:56:05.156Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
     <id>http://slowread.cn/2017/12/14/Visual-Studio-Code-常用插件/</id>
     <published>2017-12-14T04:56:48.000Z</published>
-    <updated>2017-12-14T05:27:12.521Z</updated>
+    <updated>2017-12-14T06:56:05.156Z</updated>
     
     <content type="html"><![CDATA[<h2 id="界面主题"><a href="#界面主题" class="headerlink" title="界面主题"></a>界面主题</h2><ul><li>Monokai : VSCcode 内置主题</li><li>Agila : 包含多个主题</li><li>Dark-Dracula Theme : Dracula 风格主题里面比较好的</li><li>Nosferatu : Dracula 风格主题</li><li>monokai light : 白色，背景色类色默认的vs亮色主题背景</li><li>FlatUI : 包含多个主题</li><li>Flatland Monokai Theme : </li><li>theme-dark-monokai : </li><li>Monokai Dark Soda : </li><li>Monokai Light : </li></ul><h2 id="图标主题"><a href="#图标主题" class="headerlink" title="图标主题"></a>图标主题</h2><ul><li>vscode-icons：Icons : 主要推荐</li><li>material icon theme : 备选</li></ul><h2 id="功能插件"><a href="#功能插件" class="headerlink" title="功能插件"></a>功能插件</h2><ul><li>C# : VSCode 开发 C# 必备</li><li>C# FixFormat : 格式化代码，好用</li><li>C# Extensions : 提高开发效率的扩展工具</li><li>Bracket Pair Colorizer ：对括号对进行着色，再也不会眼晕了。</li><li>Markdown All in One : All in One ，好用</li><li>markdownlint : 编写 Markdown 文件时智能提示，有助于养成好习惯。</li><li>Markdown Table Prettifier : Markdown 文件中，对表格进行强制格式化，看起来更整齐，舒服。</li><li>XML Tools  ：作者 Josh Johnson - XML 格式化/Tree View </li><li>XML Tools （备选） : 作者 Qub -  格式化XML文档 Alt+Shift+F </li><li>Output Colorizer : 可以终端日志输出着色，实用</li><li>vscode-fileheader: 添加头header comment</li><li>Setting Sync: 同步你的设置和插件</li></ul>]]></content>
     
