@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="慢读, 慢读慢写, slowread, slowread.cn, C#, Linux, VSCode" />
+  <meta name="keywords" content="C#,C#本质论,Essential C#," />
 
 
 
@@ -83,16 +83,18 @@
 
 
 
-<meta name="description" content="心存善念 随心而动">
-<meta property="og:type" content="website">
-<meta property="og:title" content="慢读慢写">
-<meta property="og:url" content="http://slowread.cn/index.html">
+<meta name="description" content="第3章 操作符和控制流 Operators and Control Flow操作符 Operators操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs C# 运算符。    名称 含义 例子     一元运算符 接受一个操作数的运算符 ++ 或 new   二元运算符 接受两个操作数的运算符 + - * /   三元运算符 接受三个操作数，C#中唯一">
+<meta name="keywords" content="C#,C#本质论,Essential C#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C#本质论笔记 第3章 操作符和控制流">
+<meta property="og:url" content="http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="心存善念 随心而动">
+<meta property="og:description" content="第3章 操作符和控制流 Operators and Control Flow操作符 Operators操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs C# 运算符。    名称 含义 例子     一元运算符 接受一个操作数的运算符 ++ 或 new   二元运算符 接受两个操作数的运算符 + - * /   三元运算符 接受三个操作数，C#中唯一">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-16T17:12:08.321Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="慢读慢写">
-<meta name="twitter:description" content="心存善念 随心而动">
+<meta name="twitter:title" content="C#本质论笔记 第3章 操作符和控制流">
+<meta name="twitter:description" content="第3章 操作符和控制流 Operators and Control Flow操作符 Operators操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs C# 运算符。    名称 含义 例子     一元运算符 接受一个操作数的运算符 ++ 或 new   二元运算符 接受两个操作数的运算符 + - * /   三元运算符 接受三个操作数，C#中唯一">
 
 
 
@@ -122,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://slowread.cn/"/>
+  <link rel="canonical" href="http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/"/>
 
 
 
 
 
-  <title>慢读慢写</title>
+  <title>C#本质论笔记 第3章 操作符和控制流 | 慢读慢写</title>
   
 
 
@@ -164,8 +166,7 @@
   
   
 
-  <div class="container  
-  page-home">
+  <div class="container  page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,9 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -310,9 +311,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/" itemprop="url">C#本质论笔记 第3章 操作符和控制流</a></h1>
+          <h1 class="post-title" itemprop="name headline">C#本质论笔记 第3章 操作符和控制流</h1>
         
 
         <div class="post-meta">
@@ -362,9 +361,7 @@
       
 
       
-        
-          
-            <h1 id="第3章-操作符和控制流-Operators-and-Control-Flow"><a href="#第3章-操作符和控制流-Operators-and-Control-Flow" class="headerlink" title="第3章 操作符和控制流 Operators and Control Flow"></a>第3章 操作符和控制流 Operators and Control Flow</h1><h2 id="操作符-Operators"><a href="#操作符-Operators" class="headerlink" title="操作符 Operators"></a>操作符 Operators</h2><p>操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/operators/index/" target="_blank" rel="noopener">C# 运算符</a>。</p>
+        <h1 id="第3章-操作符和控制流-Operators-and-Control-Flow"><a href="#第3章-操作符和控制流-Operators-and-Control-Flow" class="headerlink" title="第3章 操作符和控制流 Operators and Control Flow"></a>第3章 操作符和控制流 Operators and Control Flow</h1><h2 id="操作符-Operators"><a href="#操作符-Operators" class="headerlink" title="操作符 Operators"></a>操作符 Operators</h2><p>操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/operators/index/" target="_blank" rel="noopener">C# 运算符</a>。</p>
 <table>
 <thead>
 <tr>
@@ -627,8 +624,6 @@ Normal line #2.
 <p>若要查找警告编号，请在 Visual Studio 中生成项目，然后在“输出”窗口中查找警告编号。这是要干嘛？😥</p>
 </blockquote>
 <h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2>
-          
-        
       
     </div>
     
@@ -638,402 +633,92 @@ Normal line #2.
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="at2008 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="at2008 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
 
     
 
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
+</div>
 
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/14/Visual-Studio-Code-常用插件/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="at2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/Visual-Studio-Code-常用插件/" itemprop="url">Visual Studio Code VSCode 常用 插件 扩展</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T12:56:48+08:00">
-                2017-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
+      </div>
     
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="界面主题"><a href="#界面主题" class="headerlink" title="界面主题"></a>界面主题</h2><ul>
-<li>Monokai : VSCcode 内置主题</li>
-<li>Agila : 包含多个主题</li>
-<li>Dark-Dracula Theme : Dracula 风格主题里面比较好的</li>
-<li>Nosferatu : Dracula 风格主题</li>
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    at2008
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/" title="C#本质论笔记 第3章 操作符和控制流">http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
 </ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/Visual-Studio-Code-常用插件/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
-
-    
-
+      </div>
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/14/推荐2个好看的linux发行版本/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="at2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/推荐2个好看的linux发行版本/" itemprop="url">推荐2个好看的linux发行版本</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T01:21:31+08:00">
-                2017-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C#</a>
           
-            
+            <a href="/tags/C-本质论/" rel="tag"><i class="fa fa-tag"></i> C#本质论</a>
           
-
+            <a href="/tags/Essential-C/" rel="tag"><i class="fa fa-tag"></i> Essential C#</a>
           
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>高清图片，加载时间有点长…</p>
-<h2 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h2><p>官网地址：<a href="http://www.elementary.io/" target="_blank" rel="noopener">http://www.elementary.io/</a></p>
-<p>界面截图</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/推荐2个好看的linux发行版本/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/14/Visual-Studio-Code-常用插件/" rel="next" title="Visual Studio Code VSCode 常用 插件 扩展">
+                <i class="fa fa-chevron-left"></i> Visual Studio Code VSCode 常用 插件 扩展
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="at2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/" itemprop="url">NumLock灯在多个linux版本中的不同设置方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T00:27:18+08:00">
-                2017-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h2><p>第一步：安装numlockx，输入命令</p>
-<pre><code>sudo apt-get install numlockx
-</code></pre><p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
-<pre><code># activate-numlock=true.
-</code></pre>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1043,138 +728,11 @@ Normal line #2.
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/13/CSharp本质论笔记-第2章-数据类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="at2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/13/CSharp本质论笔记-第2章-数据类型/" itemprop="url">C#本质论笔记 第2章 数据类型</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T16:27:35+08:00">
-                2017-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>预定义类型(predefined type)/基元类型(primitive type)，也翻译为基本类型、基础类型或者原始类型。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/13/CSharp本质论笔记-第2章-数据类型/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
 
 
           </div>
@@ -1182,6 +740,15 @@ Normal line #2.
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjM4NS84OTQ2"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1204,8 +771,17 @@ Normal line #2.
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1277,6 +853,22 @@ Normal line #2.
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第3章-操作符和控制流-Operators-and-Control-Flow"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x7B2C;3&#x7AE0;-&#x64CD;&#x4F5C;&#x7B26;&#x548C;&#x63A7;&#x5236;&#x6D41;-Operators-and-Control-Flow" class="headerlink" title="&#x7B2C;3&#x7AE0; &#x64CD;&#x4F5C;&#x7B26;&#x548C;&#x63A7;&#x5236;&#x6D41; Operators and Control Flow"></a>&#x7B2C;3&#x7AE0; &#x64CD;&#x4F5C;&#x7B26;&#x548C;&#x63A7;&#x5236;&#x6D41; Operators and Control Flow</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作符-Operators"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#&#x64CD;&#x4F5C;&#x7B26;-Operators" class="headerlink" title="&#x64CD;&#x4F5C;&#x7B26; Operators"></a>&#x64CD;&#x4F5C;&#x7B26; Operators</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一元操作符"><span class="nav-number">1.1.1.</span> <span class="nav-text"><a href="#&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;" class="headerlink" title="&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;"></a>&#x4E00;&#x5143;&#x64CD;&#x4F5C;&#x7B26;</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#递增和递减操作符-–"><span class="nav-number">1.1.1.1.</span> <span class="nav-text"><a href="#&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26;-&#x2013;" class="headerlink" title="&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26; ++ &#x2013;"></a>&#x9012;&#x589E;&#x548C;&#x9012;&#x51CF;&#x64CD;&#x4F5C;&#x7B26; ++ &#x2013;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择语句"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x9009;&#x62E9;&#x8BED;&#x53E5;" class="headerlink" title="&#x9009;&#x62E9;&#x8BED;&#x53E5;"></a>&#x9009;&#x62E9;&#x8BED;&#x53E5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#if-else"><span class="nav-number">1.2.1.</span> <span class="nav-text"><a href="#if-else" class="headerlink" title="if-else"></a>if-else</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch"><span class="nav-number">1.2.2.</span> <span class="nav-text"><a href="#switch" class="headerlink" title="switch"></a>switch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#开关部分"><span class="nav-number">1.2.2.1.</span> <span class="nav-text"><a href="#&#x5F00;&#x5173;&#x90E8;&#x5206;" class="headerlink" title="&#x5F00;&#x5173;&#x90E8;&#x5206;"></a>&#x5F00;&#x5173;&#x90E8;&#x5206;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#default-case"><span class="nav-number">1.2.2.2.</span> <span class="nav-text"><a href="#default-case" class="headerlink" title="default case"></a>default case</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#匹配表达式"><span class="nav-number">1.2.2.3.</span> <span class="nav-text"><a href="#&#x5339;&#x914D;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x5339;&#x914D;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x5339;&#x914D;&#x8868;&#x8FBE;&#x5F0F;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#switch-语句的-模式匹配"><span class="nav-number">1.2.2.4.</span> <span class="nav-text"><a href="#switch-&#x8BED;&#x53E5;&#x7684;-&#x6A21;&#x5F0F;&#x5339;&#x914D;" class="headerlink" title="switch &#x8BED;&#x53E5;&#x7684; &#x6A21;&#x5F0F;&#x5339;&#x914D;"></a>switch &#x8BED;&#x53E5;&#x7684; &#x6A21;&#x5F0F;&#x5339;&#x914D;</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#常量模式"><span class="nav-number">1.2.2.4.1.</span> <span class="nav-text"><a href="#&#x5E38;&#x91CF;&#x6A21;&#x5F0F;" class="headerlink" title="&#x5E38;&#x91CF;&#x6A21;&#x5F0F;"></a>&#x5E38;&#x91CF;&#x6A21;&#x5F0F;</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类型模式"><span class="nav-number">1.2.2.4.2.</span> <span class="nav-text"><a href="#&#x7C7B;&#x578B;&#x6A21;&#x5F0F;" class="headerlink" title="&#x7C7B;&#x578B;&#x6A21;&#x5F0F;"></a>&#x7C7B;&#x578B;&#x6A21;&#x5F0F;</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#case-语句和-when-子句"><span class="nav-number">1.2.2.5.</span> <span class="nav-text"><a href="#case-&#x8BED;&#x53E5;&#x548C;-when-&#x5B50;&#x53E5;" class="headerlink" title="case &#x8BED;&#x53E5;&#x548C; when &#x5B50;&#x53E5;"></a>case &#x8BED;&#x53E5;&#x548C; when &#x5B50;&#x53E5;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高级主题：switch-case-和-枚举值"><span class="nav-number">1.2.2.6.</span> <span class="nav-text"><a href="#&#x9AD8;&#x7EA7;&#x4E3B;&#x9898;&#xFF1A;switch-case-&#x548C;-&#x679A;&#x4E3E;&#x503C;" class="headerlink" title="&#x9AD8;&#x7EA7;&#x4E3B;&#x9898;&#xFF1A;switch case &#x548C; &#x679A;&#x4E3E;&#x503C;"></a>&#x9AD8;&#x7EA7;&#x4E3B;&#x9898;&#xFF1A;switch case &#x548C; &#x679A;&#x4E3E;&#x503C;</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代语句"><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#&#x8FED;&#x4EE3;&#x8BED;&#x53E5;" class="headerlink" title="&#x8FED;&#x4EE3;&#x8BED;&#x53E5;"></a>&#x8FED;&#x4EE3;&#x8BED;&#x53E5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#do"><span class="nav-number">1.3.1.</span> <span class="nav-text"><a href="#do" class="headerlink" title="do"></a>do</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while"><span class="nav-number">1.3.2.</span> <span class="nav-text"><a href="#while" class="headerlink" title="while"></a>while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for"><span class="nav-number">1.3.3.</span> <span class="nav-text"><a href="#for" class="headerlink" title="for"></a>for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-in"><span class="nav-number">1.3.4.</span> <span class="nav-text"><a href="#foreach-in" class="headerlink" title="foreach in"></a>foreach in</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#跳转语句"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#&#x8DF3;&#x8F6C;&#x8BED;&#x53E5;" class="headerlink" title="&#x8DF3;&#x8F6C;&#x8BED;&#x53E5;"></a>&#x8DF3;&#x8F6C;&#x8BED;&#x53E5;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#break"><span class="nav-number">1.4.1.</span> <span class="nav-text"><a href="#break" class="headerlink" title="break"></a>break</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#continue"><span class="nav-number">1.4.2.</span> <span class="nav-text"><a href="#continue" class="headerlink" title="continue"></a>continue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#goto"><span class="nav-number">1.4.3.</span> <span class="nav-text"><a href="#goto" class="headerlink" title="goto"></a>goto</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#return"><span class="nav-number">1.4.4.</span> <span class="nav-text"><a href="#return" class="headerlink" title="return"></a>return</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-预处理指令"><span class="nav-number">1.5.</span> <span class="nav-text"><a href="#C-&#x9884;&#x5904;&#x7406;&#x6307;&#x4EE4;" class="headerlink" title="C# &#x9884;&#x5904;&#x7406;&#x6307;&#x4EE4;"></a>C# &#x9884;&#x5904;&#x7406;&#x6307;&#x4EE4;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#define-和-undef"><span class="nav-number">1.5.1.</span> <span class="nav-text"><a href="#define-&#x548C;-undef" class="headerlink" title="#define &#x548C; #undef"></a>#define &#x548C; #undef</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#if-elif-else-和-endif"><span class="nav-number">1.5.2.</span> <span class="nav-text"><a href="#if-elif-else-&#x548C;-endif" class="headerlink" title="#if, #elif, #else, &#x548C; #endif"></a>#if, #elif, #else, &#x548C; #endif</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#warning-和-error"><span class="nav-number">1.5.3.</span> <span class="nav-text"><a href="#warning-&#x548C;-error" class="headerlink" title="#warning &#x548C; #error"></a>#warning &#x548C; #error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#region-和-endregion"><span class="nav-number">1.5.4.</span> <span class="nav-text"><a href="#region-&#x548C;-endregion" class="headerlink" title="#region &#x548C; #endregion"></a>#region &#x548C; #endregion</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#line"><span class="nav-number">1.5.5.</span> <span class="nav-text"><a href="#line" class="headerlink" title="#line"></a>#line</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pragam"><span class="nav-number">1.5.6.</span> <span class="nav-text"><a href="#pragam" class="headerlink" title="#pragam"></a>#pragam</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结尾"><span class="nav-number">1.6.</span> <span class="nav-text"><a href="#&#x7ED3;&#x5C3E;" class="headerlink" title="&#x7ED3;&#x5C3E;"></a>&#x7ED3;&#x5C3E;</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1412,6 +1004,10 @@ Normal line #2.
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -1440,6 +1036,17 @@ Normal line #2.
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
