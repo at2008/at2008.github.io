@@ -92,7 +92,7 @@
 <meta property="og:description" content="数据类型预定义类型(predefined type)/基元类型(primitive type)，也翻译为基本类型、基础类型或者原始类型。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://slowread.cn/images/material/array-normal-error.png">
-<meta property="og:updated_time" content="2017-12-16T06:44:27.803Z">
+<meta property="og:updated_time" content="2017-12-16T06:52:34.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第2章 数据类型">
 <meta name="twitter:description" content="数据类型预定义类型(predefined type)/基元类型(primitive type)，也翻译为基本类型、基础类型或者原始类型。">
@@ -682,7 +682,7 @@ True: result = number
 <td>“C”或“c”</td>
 <td>货币</td>
 <td>结果：货币值。<br>受以下类型支持：所有数值类型。<br>精度说明符：小数位数。<br>默认值精度说明符：<br>由 NumberFormatInfo.CurrencyDecimalDigits 定义。<br>更多信息： 货币（“C”）格式说明符。</td>
-<td>123.456 (“C”, en-US) -&gt; $123.46</td>
+<td>123.456 (“C”, en-US) -&gt; $123.46 <br> 123.456 (“C”, fr-FR) -&gt; 123,46 € <br>123.456 (“C”, ja-JP) -&gt; ¥123 <br> -123.456 (“C3”, en-US) -&gt; ($123.456)<br>-123.456 (“C3”, fr-FR) -&gt; -123,456 €<br>-123.456 (“C3”, ja-JP) -&gt; -¥123.456</td>
 </tr>
 <tr>
 <td>“D”或“d”</td>
