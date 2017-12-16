@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
-    <lastmod>2017-12-16T04:52:32.437Z</lastmod>
+    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2017-12-16T04:55:38.976Z</lastmod>
     <data>
         <display>
-        <title>C#本质论笔记 第1章 C#概述</title>
-        <pubTime>2017-12-13T05:35:26.000Z</pubTime>
+        <title>C#本质论笔记 第2章 数据类型</title>
+        <pubTime>2017-12-13T08:27:35.000Z</pubTime>
         
         <tag>C#</tag>
          
@@ -25,8 +25,31 @@
 
     
   <url>
+    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2017-12-16T04:55:30.189Z</lastmod>
+    <data>
+        <display>
+        <title>Visual Studio Code VSCode 常用 插件 扩展</title>
+        <pubTime>2017-12-14T04:56:48.000Z</pubTime>
+        
+        <tag>VSCode</tag>
+         
+        <tag>插件</tag>
+         
+        <tag>Visual Studio</tag>
+         
+        <tag>Visual Studio Code</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://slowread.cn/2017/12/14/NumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2017-12-16T04:52:15.829Z</lastmod>
+    <lastmod>2017-12-16T04:54:48.670Z</lastmod>
     <data>
         <display>
         <title>NumLock灯在多个linux版本中的不同设置方法</title>
@@ -35,6 +58,27 @@
         <tag>Linux</tag>
          
         <tag>NumLock</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
+    <lastmod>2017-12-16T04:52:32.437Z</lastmod>
+    <data>
+        <display>
+        <title>C#本质论笔记 第1章 C#概述</title>
+        <pubTime>2017-12-13T05:35:26.000Z</pubTime>
+        
+        <tag>C#</tag>
+         
+        <tag>C#本质论</tag>
+         
+        <tag>Essential C#</tag>
          
          
            
@@ -65,50 +109,6 @@
 
     
     
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2017-12-14T15:48:00.083Z</lastmod>
-    <data>
-        <display>
-        <title>C#本质论笔记 第2章 数据类型</title>
-        <pubTime>2017-12-13T08:27:35.000Z</pubTime>
-        
-        <tag>C#</tag>
-         
-        <tag>C#本质论</tag>
-         
-        <tag>Essential C#</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2017-12-14T06:56:05.156Z</lastmod>
-    <data>
-        <display>
-        <title>Visual Studio Code VSCode 常用 插件 扩展</title>
-        <pubTime>2017-12-14T04:56:48.000Z</pubTime>
-        
-        <tag>VSCode</tag>
-         
-        <tag>插件</tag>
-         
-        <tag>Visual Studio</tag>
-         
-        <tag>Visual Studio Code</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
     
     

@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
+    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
     
-    <lastmod>2017-12-16T04:52:32.437Z</lastmod>
+    <lastmod>2017-12-16T04:55:38.976Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    
+    <lastmod>2017-12-16T04:55:30.189Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://slowread.cn/2017/12/14/NumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/</loc>
     
-    <lastmod>2017-12-16T04:52:15.829Z</lastmod>
+    <lastmod>2017-12-16T04:54:48.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
+    
+    <lastmod>2017-12-16T04:52:32.437Z</lastmod>
     
   </url>
   
@@ -33,20 +47,6 @@
     <loc>http://slowread.cn/tags/index.html</loc>
     
     <lastmod>2017-12-14T16:16:43.598Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    
-    <lastmod>2017-12-14T15:48:00.083Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
-    
-    <lastmod>2017-12-14T06:56:05.156Z</lastmod>
     
   </url>
   
