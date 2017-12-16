@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="第3章 操作符和控制流 Operators and Control Flow操作符 Operators操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs C# 运算符。    名称 含义 例子     一元运算符 接受一个操作数的运算符 ++ 或 new   二元运算符 接受两个操作数的运算符 + - * /   三元运算符 接受三个操作数，C#中唯一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-16T17:12:08.321Z">
+<meta property="og:updated_time" content="2017-12-16T17:22:14.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第3章 操作符和控制流">
 <meta name="twitter:description" content="第3章 操作符和控制流 Operators and Control Flow操作符 Operators操作符，也叫==运算符==，英文：==Operrators==，见 Microsoft Docs C# 运算符。    名称 含义 例子     一元运算符 接受一个操作数的运算符 ++ 或 new   二元运算符 接受两个操作数的运算符 + - * /   三元运算符 接受三个操作数，C#中唯一">
@@ -388,6 +388,7 @@
 </tr>
 </tbody>
 </table>
+<a id="more"></a>
 <h3 id="一元操作符"><a href="#一元操作符" class="headerlink" title="一元操作符"></a>一元操作符</h3><h4 id="递增和递减操作符-–"><a href="#递增和递减操作符-–" class="headerlink" title="递增和递减操作符 ++ –"></a>递增和递减操作符 ++ –</h4><p><strong>递增运算符</strong>（Post-Increment）<code>++</code> 按 1 递增其操作数。 递增运算符可以在其操作数之前或之后出现： ++variable 和 variable++。第一种形式是前缀递增操作。 操作的结果是操作数递增<strong>后</strong>的值。 第二种形式是后缀递增操作。 操作的结果是操作数递增<strong>前</strong>的值。</p>
 <p><strong>递减运算符</strong> (Post-Decrement） <code>--</code> 按 1 递减其操作数。 减量运算符可以在其操作数之前或之后出现：–variable 和 variable–。  第一种形式是前缀递减操作。 操作的结果是操作数递减<strong>后</strong>的值。 第二种形式是后缀递减操作。 操作的结果是操作数递减<strong>前</strong>的值。</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> x = <span class="number">123</span>;</span><br><span class="line"><span class="keyword">int</span> y = <span class="number">123</span>;</span><br><span class="line"><span class="comment">// 输出 123,124,125</span></span><br><span class="line">System.Console.WriteLine (<span class="string">"&#123;0&#125;,&#123;1&#125;,&#123;2&#125;"</span>, x++, x++, x);</span><br><span class="line"><span class="comment">// 输出 124,125,125</span></span><br><span class="line">System.Console.WriteLine (<span class="string">"&#123;0&#125;,&#123;1&#125;,&#123;2&#125;"</span>, ++y, ++y, y);</span><br></pre></td></tr></table></figure>
