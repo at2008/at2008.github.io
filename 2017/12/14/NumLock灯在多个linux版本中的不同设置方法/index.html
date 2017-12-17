@@ -95,7 +95,7 @@
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png">
-<meta property="og:updated_time" content="2017-12-17T02:06:15.518Z">
+<meta property="og:updated_time" content="2017-12-17T04:28:30.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NumLock灯在多个linux版本中的不同设置方法">
 <meta name="twitter:description" content="elementary OS第一步：安装numlockx，输入命令 sudo apt-get install numlockx 第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 # # activate-numlock=true.">
@@ -366,7 +366,7 @@
       
 
       
-        <h2 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h2><p>第一步：安装numlockx，输入命令</p>
+        <h1 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h1><p>第一步：安装numlockx，输入命令</p>
 <pre><code>sudo apt-get install numlockx
 </code></pre><p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
 <pre><code># activate-numlock=true.
@@ -384,7 +384,7 @@
 <li>输入命令 :wq 表示保存并退出</li>
 </ul>
 </blockquote>
-<h2 id="ferenOS，Linux-Mint"><a href="#ferenOS，Linux-Mint" class="headerlink" title="ferenOS，Linux Mint"></a>ferenOS，Linux Mint</h2><p>第一步：安装numlockx，输入命令</p>
+<h1 id="ferenOS，Linux-Mint"><a href="#ferenOS，Linux-Mint" class="headerlink" title="ferenOS，Linux Mint"></a>ferenOS，Linux Mint</h1><p>第一步：安装numlockx，输入命令</p>
 <pre><code>sudo apt-get install numlockx
 </code></pre><p>第二步：用 vim 打开 /etc/lightdm/lightdm.conf文件，最后一行添加 </p>
 <pre><code>greeter-setup-script=/usr/bin/numlockx on
@@ -395,7 +395,7 @@
 </code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png" alt="image"></p>
 <p>同样的，重启或者注销后，生效。</p>
-<h2 id="CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><a href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based" class="headerlink" title="CentOS ，Scientific Linux，Fedora and other rpm based"></a>CentOS ，Scientific Linux，Fedora and other rpm based</h2><ul>
+<h1 id="CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><a href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based" class="headerlink" title="CentOS ，Scientific Linux，Fedora and other rpm based"></a>CentOS ，Scientific Linux，Fedora and other rpm based</h1><ul>
 <li>先安装numlockx,可以去opensuse的软件中心里找rpm包进行安装</li>
 <li>下载地址：<a href="https://pkgs.org/download/numlockx/" target="_blank" rel="noopener">https://pkgs.org/download/numlockx/</a></li>
 <li>安装命令： sudo rpm -i numlockx-1.2-6.el7.nux.x86_64.rpm<ul>
@@ -406,7 +406,7 @@
 <li>再修改 vim /etc/gdm/Init/Default</li>
 <li>在exit 0之前加上/usr/bin/numlockx on,重启就会发现小键盘已经打开了！</li>
 </ul>
-<h2 id="Ubuntu-and-other-debian-based"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</h2><h3 id="基于-gdm"><a href="#基于-gdm" class="headerlink" title="基于 gdm"></a>基于 gdm</h3><p>安装 numlockx ,在终端中输入命令：</p>
+<h1 id="Ubuntu-and-other-debian-based"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</h1><h2 id="基于-gdm"><a href="#基于-gdm" class="headerlink" title="基于 gdm"></a>基于 gdm</h2><p>安装 numlockx ,在终端中输入命令：</p>
 <pre><code>sudo apt-get install numlockx
 </code></pre><p>配置 numlockx</p>
 <pre><code>sudo gedit /etc/gdm/Init/Default
@@ -417,7 +417,7 @@ if [ -x /usr/bin/numlockx ]; then
 fi
 </code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-ubuntu.png" alt="image"></p>
-<h3 id="基于-lightdm"><a href="#基于-lightdm" class="headerlink" title="基于 lightdm"></a>基于 lightdm</h3><pre><code>sudo gedit /etc/lightdm/lightdm.conf
+<h2 id="基于-lightdm"><a href="#基于-lightdm" class="headerlink" title="基于 lightdm"></a>基于 lightdm</h2><pre><code>sudo gedit /etc/lightdm/lightdm.conf
 </code></pre><p>最后一行添加下面语句：</p>
 <pre><code>greeter-setup-script=/usr/bin/numlockx on
 </code></pre><p>结果如下图：</p>
@@ -665,7 +665,7 @@ fi
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#elementary-OS"><span class="nav-number">1.</span> <span class="nav-text"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ferenOS，Linux-Mint"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ferenOS&#xFF0C;Linux-Mint" class="headerlink" title="ferenOS&#xFF0C;Linux Mint"></a>ferenOS&#xFF0C;Linux Mint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><span class="nav-number">3.</span> <span class="nav-text"><a href="#CentOS-&#xFF0C;Scientific-Linux&#xFF0C;Fedora-and-other-rpm-based" class="headerlink" title="CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based"></a>CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu-and-other-debian-based"><span class="nav-number">4.</span> <span class="nav-text"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于-gdm"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#&#x57FA;&#x4E8E;-gdm" class="headerlink" title="&#x57FA;&#x4E8E; gdm"></a>&#x57FA;&#x4E8E; gdm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于-lightdm"><span class="nav-number">4.2.</span> <span class="nav-text"><a href="#&#x57FA;&#x4E8E;-lightdm" class="headerlink" title="&#x57FA;&#x4E8E; lightdm"></a>&#x57FA;&#x4E8E; lightdm</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#elementary-OS"><span class="nav-number">1.</span> <span class="nav-text"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ferenOS，Linux-Mint"><span class="nav-number">2.</span> <span class="nav-text"><a href="#ferenOS&#xFF0C;Linux-Mint" class="headerlink" title="ferenOS&#xFF0C;Linux Mint"></a>ferenOS&#xFF0C;Linux Mint</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CentOS-，Scientific-Linux，Fedora-and-other-rpm-based"><span class="nav-number">3.</span> <span class="nav-text"><a href="#CentOS-&#xFF0C;Scientific-Linux&#xFF0C;Fedora-and-other-rpm-based" class="headerlink" title="CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based"></a>CentOS &#xFF0C;Scientific Linux&#xFF0C;Fedora and other rpm based</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ubuntu-and-other-debian-based"><span class="nav-number">4.</span> <span class="nav-text"><a href="#Ubuntu-and-other-debian-based" class="headerlink" title="Ubuntu and other debian based"></a>Ubuntu and other debian based</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基于-gdm"><span class="nav-number">4.1.</span> <span class="nav-text"><a href="#&#x57FA;&#x4E8E;-gdm" class="headerlink" title="&#x57FA;&#x4E8E; gdm"></a>&#x57FA;&#x4E8E; gdm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于-lightdm"><span class="nav-number">4.2.</span> <span class="nav-text"><a href="#&#x57FA;&#x4E8E;-lightdm" class="headerlink" title="&#x57FA;&#x4E8E; lightdm"></a>&#x57FA;&#x4E8E; lightdm</span></a></li></ol></li></ol></div>
             
 
           </div>
