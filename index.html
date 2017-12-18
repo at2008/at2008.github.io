@@ -293,6 +293,142 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/18/Hexo-Next-使用配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="at2008">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢读慢写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/18/Hexo-Next-使用配置/" itemprop="url">Hexo Next 使用配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-18T13:53:32+08:00">
+                2017-12-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
+<h2 id="直接使用-Hexo-标签插件"><a href="#直接使用-Hexo-标签插件" class="headerlink" title="直接使用 Hexo 标签插件"></a>直接使用 Hexo 标签插件</h2><pre><code>{% iframe url [width] [height] %}
+</code></pre><h2 id="直接使用-HTML-语句"><a href="#直接使用-HTML-语句" class="headerlink" title="直接使用 HTML 语句"></a>直接使用 HTML 语句</h2><pre><code>&lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=&quot;500px&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt; &lt;/iframe&gt;
+</code></pre><h1 id="指定在新窗口打开文章中的链接"><a href="#指定在新窗口打开文章中的链接" class="headerlink" title="指定在新窗口打开文章中的链接"></a>指定在新窗口打开文章中的链接</h1><h2 id="使用-Hexo-标签插件"><a href="#使用-Hexo-标签插件" class="headerlink" title="使用 Hexo 标签插件"></a>使用 Hexo 标签插件</h2><p>在Markdown文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。方法如下：</p>
+<pre><code>{% link text url [external] [title] %}
+</code></pre><h2 id="使用-HTML-语句"><a href="#使用-HTML-语句" class="headerlink" title="使用 HTML 语句"></a>使用 HTML 语句</h2><p>可以在 <code>Markdown</code> 文件或者 <code>HTML</code> 文件中采用下面的写法：</p>
+<pre><code>&lt;a href=&quot;http://example.com/&quot; target=&quot;_blank&quot;&gt;Hello, world!&lt;/a&gt;
+</code></pre><h1 id="让-Hexo-忽略编译指定文件或目录"><a href="#让-Hexo-忽略编译指定文件或目录" class="headerlink" title="让 Hexo 忽略编译指定文件或目录"></a>让 Hexo 忽略编译指定文件或目录</h1><p>Hexo 编译 站点目录下的 <code>source</code> 目录下的文件。<code>skip_render</code> 参数设置的路径是相对于 <code>source</code> 目录的路径。</p>
+<p>编辑 <code>主题配置文件</code> <code>_config.yml</code> 的 <code>skip_render:</code> 位置，比如 GitHub 的 reaadme.md、404文件、搜索引擎验证文件等，都不需要 Hexo 进行编译，示例如下：</p>
+<pre><code>skip_render:
+- readme.md     //排除 readme.md
+- 404.html      //排除 404.html
+- demo/**      //排除 /source/demo目录中所有文件
+- demo/*.html   //排除 /source/demo目录中所有后缀为 html 的文件
+</code></pre><blockquote>
+<p>特别提示，编辑保存后，一定要执行 <code>Hexo clean</code> 命令，然后再执行 <code>hexo g -d</code> 命令，否则不生效，这个有点坑。😥</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -812,130 +948,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/13/CSharp本质论笔记-第2章-数据类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="at2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/13/CSharp本质论笔记-第2章-数据类型/" itemprop="url">C#本质论笔记 第2章 数据类型</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-13T16:27:35+08:00">
-                2017-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>预定义类型(predefined type)/基元类型(primitive type)，也翻译为基本类型、基础类型或者原始类型。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/13/CSharp本质论笔记-第2章-数据类型/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -992,7 +1004,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1005,7 +1017,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
