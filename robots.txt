@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /2017/
+Allow: /page/
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
