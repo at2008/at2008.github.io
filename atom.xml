@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2017-12-18T03:15:57.089Z</updated>
+  <updated>2017-12-18T03:28:16.248Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>C#本质论笔记目录</title>
-    <link href="http://slowread.cn/2017/12/18/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0%E7%9B%AE%E5%BD%95/"/>
-    <id>http://slowread.cn/2017/12/18/CSharp本质论笔记目录/</id>
-    <published>2017-12-18T03:06:53.000Z</published>
-    <updated>2017-12-18T03:15:57.089Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/">CSharp本质论笔记 第1章 CSharp概述</a></p><p><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">C#本质论笔记 第2章 数据类型</a></p><p><a href="http://slowread.cn/2017/12/17/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC3%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E6%8E%A7%E5%88%B6%E6%B5%81/">C#本质论笔记 第3章 操作符和控制流</a></p><p><a href="">C#本质论笔记 第4章 方法和参数</a></p><p><a href="">C#本质论笔记 第5章 </a></p><p><a href="">C#本质论笔记 第6章 </a></p><p><a href="">C#本质论笔记 第7章 </a></p><p><a href="">C#本质论笔记 第8章 </a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
-    
-  </entry>
   
   <entry>
     <title>C#本质论笔记 第3章 操作符和控制流</title>
