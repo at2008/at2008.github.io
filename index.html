@@ -365,11 +365,12 @@
         
           <h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
 <ul>
-<li><p>直接使用 Hexo 标签插件</p>
-  <iframe src="url" width="[width]" height="[height]" frameborder="0" allowfullscreen></iframe>
-</li>
-<li><p>直接使用 HTML 语句</p>
-</li>
+<li>直接使用 Hexo 标签插件</li>
+</ul>
+<p>在 <code>Markdown</code> 文件中，可以直接使用 <code>Hexo</code> 标签插件来实现，在文章中插入 iframe。</p>
+<pre><code>{% iframe url [width] [height] %}
+</code></pre><ul>
+<li>直接使用 HTML 语句</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"http://example.com"</span> <span class="attr">width</span>=<span class="string">"700px"</span> <span class="attr">height</span>=<span class="string">"500px"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
