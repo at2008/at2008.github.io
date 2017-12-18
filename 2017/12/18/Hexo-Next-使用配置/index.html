@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-18T07:58:00.105Z">
+<meta property="og:updated_time" content="2017-12-18T08:03:44.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next 使用配置">
 <meta name="twitter:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
@@ -382,15 +382,15 @@
 </ul>
 <p>可以在 <code>Markdown</code> 文件或者 <code>HTML</code> 文件中采用下面的写法：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://example.com/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Hello, world!<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h1 id="让-Hexo-忽略编译指定文件或目录"><a href="#让-Hexo-忽略编译指定文件或目录" class="headerlink" title="让 Hexo 忽略编译指定文件或目录"></a>让 Hexo 忽略编译指定文件或目录</h1><p>Hexo 编译 <code>站点目录</code> 下的 <code>source</code> 目录下的文件。<code>skip_render</code> 参数设置的路径是相对于 <code>source</code> 目录的路径。</p>
+<h1 id="让-Hexo-忽略编译指定文件或目录"><a href="#让-Hexo-忽略编译指定文件或目录" class="headerlink" title="让 Hexo 忽略编译指定文件或目录"></a>让 Hexo 忽略编译指定文件或目录</h1><blockquote>
+<blockquote>
+<p>写在前面</p>
+</blockquote>
+<p>编辑保存后，一定要执行 <code>Hexo clean</code> 命令，然后再执行 <code>hexo g -d</code> 命令，否则不生效，这个有点坑。😥</p>
+</blockquote>
+<p>Hexo 编译 <code>站点目录</code> 下的 <code>source</code> 目录下的文件。<code>skip_render</code> 参数设置的路径是相对于 <code>source</code> 目录的路径。</p>
 <p>编辑 <code>主题配置文件</code> <code>_config.yml</code> 的 <code>skip_render:</code> 位置，比如 GitHub 的 reaadme.md、404文件、搜索引擎验证文件等，都不需要 Hexo 进行编译，示例如下：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">readme.md</span>     <span class="string">//排除</span> <span class="string">readme.md</span></span><br><span class="line"><span class="bullet">-</span> <span class="number">404.</span><span class="string">html</span>      <span class="string">//排除</span> <span class="number">404.</span><span class="string">html</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">demo/**</span>       <span class="string">//排除</span> <span class="string">/source/demo目录中所有文件</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">demo/*.html</span>   <span class="string">//排除</span> <span class="string">/source/demo目录中所有后缀为</span> <span class="string">html</span> <span class="string">的文件</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<blockquote>
-<p>特别提示，编辑保存后，一定要执行 <code>Hexo clean</code> 命令，然后再执行 <code>hexo g -d</code> 命令，否则不生效，这个有点坑。😥</p>
-</blockquote>
-</blockquote>
-
       
     </div>
     
