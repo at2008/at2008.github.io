@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
+    
+    <lastmod>2017-12-19T14:45:02.457Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
     
     <lastmod>2017-12-19T13:32:27.259Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
     
     <lastmod>2017-12-18T12:18:29.744Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
-    
-    <lastmod>2017-12-18T12:02:50.685Z</lastmod>
     
   </url>
   

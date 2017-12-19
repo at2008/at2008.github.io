@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-18T12:02:50.685Z">
+<meta property="og:updated_time" content="2017-12-19T14:45:02.457Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next 使用配置">
 <meta name="twitter:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
@@ -404,7 +404,7 @@
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">readme.md</span>     <span class="string">//排除</span> <span class="string">readme.md</span></span><br><span class="line"><span class="bullet">-</span> <span class="number">404.</span><span class="string">html</span>      <span class="string">//排除</span> <span class="number">404.</span><span class="string">html</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">demo/**</span>       <span class="string">//排除</span> <span class="string">/source/demo目录中所有文件</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">demo/*.html</span>   <span class="string">//排除</span> <span class="string">/source/demo目录中所有后缀为</span> <span class="string">html</span> <span class="string">的文件</span></span><br></pre></td></tr></table></figure>
 <h1 id="侧边栏嵌入网易云音乐"><a href="#侧边栏嵌入网易云音乐" class="headerlink" title="侧边栏嵌入网易云音乐"></a>侧边栏嵌入网易云音乐</h1><p>修改 \themes\next\layout_custom\sidebar.swig，加入下面代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> <span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">110</span> <span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=0&amp;id=网易云音乐ID&amp;auto=0&amp;height=90"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>上面的<code>网易云音乐ID</code>改成网易云音乐某个专辑的ID，不是用户ID，<a href="http://music.163.com/#/outchain/0/733122887/" target="_blank" rel="noopener">参考链接</a>。😥</p>
+<p>上面的<code>网易云音乐ID</code>改成网易云音乐某个专辑的ID，不是用户ID，<a href="http://music.163.com/#/outchain/0/733122887/" target="_blank" rel="noopener">参考链接</a>。另外，专辑中一定不要有存在版权问题的歌曲，否则不能播放，也即是说，允许用户无条件下载的歌曲才可以。</p>
 
       
     </div>
@@ -632,7 +632,7 @@
           
           
 
-          
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=2021715062&auto=0&height=90"></iframe>
         </div>
       </section>
 

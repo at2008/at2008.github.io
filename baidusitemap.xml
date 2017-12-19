@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-12-19T14:45:02.457Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo Next 使用配置</title>
+        <pubTime>2017-12-18T05:53:32.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Next 主题</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
     <lastmod>2017-12-19T13:32:27.259Z</lastmod>
     <data>
@@ -100,25 +119,6 @@
         <tag>Visual Studio</tag>
          
         <tag>Visual Studio Code</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-12-18T12:02:50.685Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo Next 使用配置</title>
-        <pubTime>2017-12-18T05:53:32.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Next 主题</tag>
          
          
            
