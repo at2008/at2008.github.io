@@ -550,14 +550,14 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 1.6;
 }
 pre,
 code {
-  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+  font-family: "Input Mono", "PT Mono", Consolas, Georgia, Monaco, Menlo, monospace;
 }
 code {
   padding: 2px 4px;
@@ -565,7 +565,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 14px;
 }
 pre {
   padding: 10px;
@@ -2028,7 +2028,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f9ddff;
+  background: #c9a7ff;
 }
 .links-of-blogroll {
   font-size: 13px;
