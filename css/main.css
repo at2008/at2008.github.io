@@ -2028,7 +2028,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6740ec;
+  background: #f9ddff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3233,13 +3233,6 @@ pre {
   margin: 5px 0;
   padding: 5px;
   border-radius: 3px;
-}
-.post {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
 ul {
   list-style-type: circle;
