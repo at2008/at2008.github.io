@@ -670,7 +670,10 @@
 
       
         
-          <h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
+          <h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>next/source/css/_schemes/Pisces/_layout.styl</code> 文件中下面的字段内容：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header</span>&#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
+<p>完整文件参见 <a href="https://github.com/xiao-fang/xiao-fang.github.io/blob/3a95f3919a90bf56738016f9eb8a59e5bfab4a22/themes/next/source/css/_schemes/Pisces/_layout.styl" target="_blank" rel="noopener">这个地址</a>。</p>
+<h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
 <ul>
 <li>直接使用 Hexo 标签插件</li>
 </ul>

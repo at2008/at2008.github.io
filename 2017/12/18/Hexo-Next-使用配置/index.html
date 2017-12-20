@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
+<meta name="description" content="Pisces子主题页面留白太多问题修改 next/source/css/_schemes/Pisces/_layout.styl 文件中下面的字段内容： 123.header&amp;#123; width: 80%; &amp;#125; /* 80% */.container .main-inner &amp;#123; width: 80%; &amp;#125; /* 80% */.content-wrap &amp;#123;">
 <meta name="keywords" content="Hexo,Next 主题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next 使用配置">
 <meta property="og:url" content="http://slowread.cn/2017/12/18/Hexo-Next-使用配置/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
+<meta property="og:description" content="Pisces子主题页面留白太多问题修改 next/source/css/_schemes/Pisces/_layout.styl 文件中下面的字段内容： 123.header&amp;#123; width: 80%; &amp;#125; /* 80% */.container .main-inner &amp;#123; width: 80%; &amp;#125; /* 80% */.content-wrap &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-19T16:28:43.076Z">
+<meta property="og:updated_time" content="2017-12-20T13:01:07.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next 使用配置">
-<meta name="twitter:description" content="文章中嵌入html页面在文章中插入 iframe。  直接使用 Hexo 标签插件  在 Markdown 文件中，可以直接使用 Hexo 标签插件来实现，在文章中插入 iframe。 {% iframe url [width] [height] %}  直接使用 HTML 语句  1&amp;lt;iframe src=&quot;http://example.com&quot; width=&quot;700px&quot; height=">
+<meta name="twitter:description" content="Pisces子主题页面留白太多问题修改 next/source/css/_schemes/Pisces/_layout.styl 文件中下面的字段内容： 123.header&amp;#123; width: 80%; &amp;#125; /* 80% */.container .main-inner &amp;#123; width: 80%; &amp;#125; /* 80% */.content-wrap &amp;#123;">
 
 
 
@@ -374,7 +374,10 @@
       
 
       
-        <h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
+        <h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>next/source/css/_schemes/Pisces/_layout.styl</code> 文件中下面的字段内容：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header</span>&#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
+<p>完整文件参见 <a href="https://github.com/xiao-fang/xiao-fang.github.io/blob/3a95f3919a90bf56738016f9eb8a59e5bfab4a22/themes/next/source/css/_schemes/Pisces/_layout.styl" target="_blank" rel="noopener">这个地址</a>。</p>
+<h1 id="文章中嵌入html页面"><a href="#文章中嵌入html页面" class="headerlink" title="文章中嵌入html页面"></a>文章中嵌入html页面</h1><p>在文章中插入 iframe。</p>
 <ul>
 <li>直接使用 Hexo 标签插件</li>
 </ul>
@@ -666,7 +669,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文章中嵌入html页面"><span class="nav-number">1.</span> <span class="nav-text">文章中嵌入html页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指定在新窗口打开文章中的链接"><span class="nav-number">2.</span> <span class="nav-text">指定在新窗口打开文章中的链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#让-Hexo-忽略编译指定文件或目录"><span class="nav-number">3.</span> <span class="nav-text">让 Hexo 忽略编译指定文件或目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改文章内链接文本样式"><span class="nav-number">4.</span> <span class="nav-text">修改文章内链接文本样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏嵌入网易云音乐"><span class="nav-number">5.</span> <span class="nav-text">侧边栏嵌入网易云音乐</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Pisces子主题页面留白太多问题"><span class="nav-number">1.</span> <span class="nav-text">Pisces子主题页面留白太多问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章中嵌入html页面"><span class="nav-number">2.</span> <span class="nav-text">文章中嵌入html页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指定在新窗口打开文章中的链接"><span class="nav-number">3.</span> <span class="nav-text">指定在新窗口打开文章中的链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#让-Hexo-忽略编译指定文件或目录"><span class="nav-number">4.</span> <span class="nav-text">让 Hexo 忽略编译指定文件或目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改文章内链接文本样式"><span class="nav-number">5.</span> <span class="nav-text">修改文章内链接文本样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏嵌入网易云音乐"><span class="nav-number">6.</span> <span class="nav-text">侧边栏嵌入网易云音乐</span></a></li></ol></div>
             
 
           </div>
