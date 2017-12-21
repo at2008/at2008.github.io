@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <style>
+/*--------------------------------------------------------------------------------------------- * Copyright (c) Microsoft Corporation. All rights reserved. * Licensed under the MIT License. See License.txt in the project root for license information. *--------------------------------------------------------------------------------------------*/ body { font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback"; font-size: 14px; padding: 0 12px; line-height: 22px; word-wrap: break-word; } body.scrollBeyondLastLine { margin-bottom: calc(100vh - 22px); } body.showEditorSelection .code-line { position: relative; } body.showEditorSelection .code-active-line:before, body.showEditorSelection .code-line:hover:before { content: ""; display: block; position: absolute; top: 0; left: -12px; height: 100%; } body.showEditorSelection li.code-active-line:before, body.showEditorSelection li.code-line:hover:before { left: -30px; } .vscode-light.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(0, 0, 0, 0.15); } .vscode-light.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(0, 0, 0, 0.40); } .vscode-dark.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 255, 255, 0.4); } .vscode-dark.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 255, 255, 0.60); } .vscode-high-contrast.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 160, 0, 0.7); } .vscode-high-contrast.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 160, 0, 1); } img { max-width: 100%; max-height: 100%; } a { color: #4080D0; text-decoration: none; } a:focus, input:focus, select:focus, textarea:focus { outline: 1px solid -webkit-focus-ring-color; outline-offset: -1px; } hr { border: 0; height: 2px; border-bottom: 2px solid; } h1 { padding-bottom: 0.3em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; } h1, h2, h3 { font-weight: normal; } h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { font-size: inherit; line-height: auto; } a:hover { color: #4080D0; text-decoration: underline; } table { border-collapse: collapse; } table > thead > tr > th { text-align: left; border-bottom: 1px solid; } table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td { padding: 5px 10px; } table > tbody > tr + tr > td { border-top: 1px solid; } blockquote { margin: 0 7px 0 5px; padding: 0 16px 0 10px; border-left: 5px solid; } code { font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback"; font-size: 14px; line-height: 19px; } body.wordWrap pre { white-space: pre-wrap; } .mac code { font-size: 12px; line-height: 18px; } code > div { padding: 16px; border-radius: 3px; overflow: auto; } /** Theming */ .vscode-light { color: rgb(30, 30, 30); } .vscode-dark { color: #DDD; } .vscode-high-contrast { color: white; } .vscode-light code { color: #A31515; } .vscode-dark code { color: #D7BA7D; } .vscode-light code > div { background-color: rgba(220, 220, 220, 0.4); } .vscode-dark code > div { background-color: rgba(10, 10, 10, 0.4); } .vscode-high-contrast code > div { background-color: rgb(0, 0, 0); } .vscode-high-contrast h1 { border-color: rgb(0, 0, 0); } .vscode-light table > thead > tr > th { border-color: rgba(0, 0, 0, 0.69); } .vscode-dark table > thead > tr > th { border-color: rgba(255, 255, 255, 0.69); } .vscode-light h1, .vscode-light hr, .vscode-light table > tbody > tr + tr > td { border-color: rgba(0, 0, 0, 0.18); } .vscode-dark h1, .vscode-dark hr, .vscode-dark table > tbody > tr + tr > td { border-color: rgba(255, 255, 255, 0.18); } .vscode-light blockquote, .vscode-dark blockquote { background: rgba(127, 127, 127, 0.1); border-color: rgba(0, 122, 204, 0.5); } .vscode-high-contrast blockquote { background: transparent; border-color: #fff; }
+</style>
+<style>
+/* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */ /* Tomorrow Comment */ .hljs-comment, .hljs-quote { color: #8e908c; } /* Tomorrow Red */ .hljs-variable, .hljs-template-variable, .hljs-tag, .hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-deletion { color: #c82829; } /* Tomorrow Orange */ .hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link { color: #f5871f; } /* Tomorrow Yellow */ .hljs-attribute { color: #eab700; } /* Tomorrow Green */ .hljs-string, .hljs-symbol, .hljs-bullet, .hljs-addition { color: #718c00; } /* Tomorrow Blue */ .hljs-title, .hljs-section { color: #4271ae; } /* Tomorrow Purple */ .hljs-keyword, .hljs-selector-tag { color: #8959a8; } .hljs { display: block; overflow-x: auto; color: #4d4d4c; padding: 0.5em; } .hljs-emphasis { font-style: italic; } .hljs-strong { font-weight: bold; }
+</style>
+<style>
+ul.contains-task-list { padding-left: 0; } ul ul.contains-task-list { padding-left: 40px; } .task-list-item { list-style-type: none; } .task-list-item-checkbox { vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="">非凡和风  暖冬之旅</h1>
+<p>上海、拉瓦格、马尼拉、冲绳、上海8天7晚</p>
+<p><code>出发日期：2018年2月17日</code></p>
+<h2 id="">邮轮特色</h2>
+<ul>
+<li>精彩行程：上海出发，畅游2国3地【菲律宾+日本】，覆盖两国必玩热门目的地城市。</li>
+<li>精致餐饮：符合亚洲的饮食口味与习惯，一定让您食指大动。</li>
+<li>娱乐享受：各式免费的娱乐项目、康体设施、精彩表演让旅途充满乐趣；丰富的免税精品满足您的购物欲望。</li>
+<li>悠闲舒适：避免旅程奔波，随心所欲地安排活动，享受度假乐趣。</li>
+<li>新鲜体验：感受新潮的邮轮假期，享受新颖时尚奢华旅游。</li>
+</ul>
+<p><img src="http://slowread.cn/original/419.jpg" alt="image"></p>
+<h2 id="">行程时间表</h2>
+<table>
+<thead>
+<tr>
+<th>港口</th>
+<th>抵达时间</th>
+<th>登船时间</th>
+<th>离港时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上海</td>
+<td>-</td>
+<td>10:00-12:00</td>
+<td>14:00</td>
+</tr>
+<tr>
+<td>海上假期</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>拉瓦格</td>
+<td>12:00</td>
+<td>-</td>
+<td>19:00</td>
+</tr>
+<tr>
+<td>马尼拉</td>
+<td>10:00</td>
+<td>-</td>
+<td>19:00</td>
+</tr>
+<tr>
+<td>海上假期</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>冲绳</td>
+<td>16:00（17:00）</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>冲绳</td>
+<td>-</td>
+<td>01:00（02:00）</td>
+<td>-</td>
+</tr>
+<tr>
+<td>上海</td>
+<td>07:00</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>() 括号内为当地时间</strong></p>
+<h2 id="">每天行程</h2>
+<ul>
+<li>第一天 上海 [登船时间10:00-12:00 离港时间 14:00]</li>
+</ul>
+<p>前往上海的吴淞口邮轮码头(宝杨路1号)/外高桥码头(港建路1919号 仅供参考)。办理登船手续，登上丽星邮轮75，338吨的［处女星号］，开始美妙的海上之旅 (离港时间，关闸时间为)。邮轮上的设施应有尽有，不管您拥有哪种个性和喜好，都能在邮轮上找到适合您的节目请根据邮轮上的丽星导航自行安排活动，并尽享各种国际美食，晚上来自世界各地著名艺员还会献上一台精彩的歌舞晚会.</p>
+<ul>
+<li>第二天 海上巡游</li>
+</ul>
+<p>今天蓝色的大海向您敞开温暖的胸怀，欢迎您的来访。一觉睡到自然醒，然后您开始充分享受邮轮上各种娱乐设施和舒适服务。在餐厅里品尝来自世界各地的美食；而船上众多的免税商品更可让您体验疯狂购物的乐趣！</p>
+<ul>
+<li>第三天 菲律宾拉瓦格 [抵达时间 12:00 离港时间 19:00]</li>
+</ul>
+<p>邮轮于中午1200抵达拉瓦格， 是菲律宾吕宋岛西北方的临海小城市，也是北伊罗柯斯省（Ilocos Norte）的省会，离马尼拉约487公里，距台湾45分钟航程。佬沃，正式的叫法应该是拉瓦格，由于地处菲律宾，华人很多，后来就被习惯地称作佬沃。充满小镇气息的佬沃，是菲律宾最高学府马可斯大学所在地。亦是前菲律宾总统马可斯的故乡，所以除了随处可见的西班牙式教堂外，也有很多有关马可斯的建设。佬沃四周尽是翠绿的原野，并且拥有波澜平静的海洋。教堂、钟塔等西班牙的建筑，充满了欧洲浪漫的古典情调。碧海蓝天、阳光沙滩的热带景致，处处洋溢着自然纯朴的风情，可以充分享受休闲自在的南国假期。 (可选择参加船上组织岸上游)
+温馨提醒：若您自费参加了船上组织的岸上观光线路，请按所通知的时间和地点集合，另邮轮将会提前关闸，请务必根据船上当天规 定的时间回船！</p>
+<ul>
+<li>第四天 菲律宾马尼拉 [抵达时间 10:00 离港时间 19:00 ]</li>
+</ul>
+<p>邮轮于上午1000抵达马尼拉（Manila），马尼拉菲律宾首都及第一大城市，是全世界最大的城市之一，也是全世界最具国际化的城市之一，同时也是全世界最多元化的城市之一，世界著名的国际大都市，被人们称为“亚洲的纽约”。马尼拉城区由帕西格河分为南北两部分，河南是行政区和住宅区，包括国会大厦、政府各部、各国使馆等，北部有总统府马拉卡南宫等。著名的罗哈斯大道北接港区、南连国际机场，贯穿全市。老城区汇集了马尼拉最具特色的景点。今日的马尼拉，已是一座市容整洁的热带花园城市，一座国际性的商埠。马尼拉文化是在印度文明、中国文明及中亚古文明的基础上，融合了西班牙和美国的西洋文明，形成了它自己专属的、东西合璧的独特文化。 (可选择参加船上组织岸上游)
+温馨提醒：若您自费参加了船上组织的岸上观光线路，请按所通知的时间和地点集吅，另邮轮将会提前关闸，请务必根据船上当天规 定的时间回船！</p>
+<ul>
+<li>第五天 海上巡游</li>
+</ul>
+<p>今天蓝色的大海向您敞开温暖的胸怀，欢迎您的来访。一觉睡到自然醒，然后您开始充分享受邮轮上各种娱乐设施和舒适服务。在餐厅里品尝来自世界各地的美食；而船上众多的免税商品更可让您体验疯狂购物的乐趣！</p>
+<ul>
+<li>第六天 日本冲绳 [抵达时间16:00（17:00） 离港时间 - - ]</li>
+</ul>
+<p>邮轮于下午1600（1700）抵达，冲绳岛北部为山地，占全岛三分之二，有那霸岳、嘉津宇岳、恩纳岳等。南部多台地和平原。其西北部为一半岛——本部半岛。东北部是国头山地。以农业为主，有水田和果园，主产菠萝、甘蔗。水产丰富。有罐头、制糖等工业。那霸为最大港市。位于琉球群岛中央，地处日本西南，在日本本土和中国台湾之间，是群岛中的最大岛屿。北距九州岛约340公里，南北长约107公里，宽约31公里，周长约560公里，面积约1208平方公里，人口约122万。冲绳岛独特的地理位置使它具有日本少有的亚热带风光，岛上成林的棕榈树、槟榔树和沙滩、海水构成了一幅美丽的图景，这使它有了“东方夏威夷”的美称。(可选择参加船上组织岸上游)
+温馨提醒：若您自费参加了船上组织的岸上观光线路，请按所通知的时间和地点集吅，另邮轮将会提前关闸，请务必根据船上当天规 定的时间回船！</p>
+<ul>
+<li>第七天 日本冲绳 [抵达时间 - - 离港时间01:00（02:00）]</li>
+</ul>
+<p>邮轮于晚上01:00（02:00）离开那霸，全天可以在那霸自由自在的游览。(可选择参加船上组织岸上游)
+温馨提醒：若您自费参加了船上组织的岸上观光线路，请按所通知的时间和地点集吅，另邮轮将会提前关闸，请务必根据船上当天规 定的时间回船！</p>
+<ul>
+<li>第八天 上海 [抵达时间 07:00]</li>
+</ul>
+<p>细细品尝一顿丰富的早餐，邮轮将缓缓驶入港口，您可选择继续自费在上海旅游观光，享受美好的假期。</p>
+<h2 id="">岸上游参考行程</h2>
+<p>【波上宫】波之上神宫是琉球八社中最上位的神社，建于琉球王国时代。为琉球国新一之宫、旧社格为官币小社。琉球八社之一，八社之最上位，为“冲绳总镇守”。波之上神宫靠近那霸港，坐落在一个小山丘上，一面向着大海。因此，它的名字也意为“当起大浪时，神社仿佛在波浪之上”。</p>
+<p>【首里城】（不进城）是位于琉球群岛的冲绳岛内南部，那霸市以东一座琉球式城堡，从 15 世纪至 19 世纪是琉球国的都城所在地和王宫，首里城原建于 13 世纪末至 14 世纪初，是琉球王国的政治和权力的中心。是冲绳群岛的重要古迹，是以战后残留的原型为样板复制的唐朝风格建筑。</p>
+<p>【A&amp;S 综合免税店】 本店为顾客提供最全面、最丰富的商品以供选购。包括：家用电器、化妆品、奢侈品箱包手表、健康食品、生活杂货、礼品纪念品、人气药妆、珠宝首饰等，免税服务也最大限度满足顾客安心优惠的购物需求。中、韩、英文多语言对应更为高效实际的提高顾客的购物体验。</p>
+<p>【RYUKYUPLAZA】 日本超人气免税店，1978 年大阪店开业以来,在东京,福冈,名古屋,北海道等处开设了多处分店。30 多年来接待了数以万计的各国游客。不仅满足了广大旅客的购物需求,也为近年来经济低迷的日本市场作出了贡献。客人可为自己或亲朋好友选购各种日本国民之健康流行食品及各种日本手信。
+用餐自理！！</p>
+<h2 id="">服务标准</h2>
+<h3 id="">价格包含</h3>
+<ol>
+<li>处女星号邮轮船票，7晚住宿；</li>
+<li>邮轮上提供的一日三餐、下午茶及夜宵；</li>
+<li>邮轮上派对、主题晚会、表演、游戏、比赛等活动（特别注明的收费活动除外）；</li>
+<li>邮轮港务费;</li>
+</ol>
+<h3 id="">价格不包含</h3>
+<ol>
+<li>不含邮轮服务费：非套房客人港币100元/人晚，套房客人港币120元/人晚，2周岁及以下儿童免费服务费；</li>
+<li>郑州起止火车硬卧+600元/人；</li>
+<li>个人所有其他消费（如：电话、付费电话、洗衣、酒店及餐厅酒水、上网等旅游费用包含之外的）；</li>
+<li>邮轮保险。（建议购买）</li>
+<li>岸上观光行程</li>
+<li>不含领队，全程无领队。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>内舱房</th>
+<th>窗户海景房</th>
+<th>阳台房</th>
+<th>套房</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="http://slowread.cn/original/3806.png" alt="image"></td>
+<td><img src="http://slowread.cn/original/3808.png" alt="image"></td>
+<td><img src="http://slowread.cn/original/3810.png" alt="image"></td>
+<td><img src="http://slowread.cn/original/3811.png" alt="image"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>证件要求：持有效期至少为6个月以上的护照，并请随身携带护照首页复印件 (原始尺寸) 2张。</strong></p>
+<h2 id="">乘客须知</h2>
+<ol>
+<li>免费餐厅：丽星餐厅 (6楼)，丽都自助餐厅 (12楼国际美食)，满汉轩 (6楼)</li>
+<li>特色餐厅：侍军日本料理 (8楼) ，泰姬印度自助餐厅（8楼），帕拉素 (7楼)，名仕酒吧(13楼)，蓝湖美食 (7楼)，妲芬娜酒吧 (13楼),加勒图雪糕吧（12楼），丝路花舞（7楼）咖啡廊等餐厅及酒吧。</li>
+<li>免费设施：银河星夜总会、星座剧院 (指定表演除外) 、露天泳池、按摩池、健身房、缓跑径、高尔夫练场.</li>
+<li>电源：船上电压为220V，插座适用于中国常见两脚扁插，英式三脚方插，欧式二脚圆插。</li>
+<li>房卡：请注意保管！房卡既是舱房钥匙，也是消费卡。如丢失，请去7楼接待处报失及办理相关手续。</li>
+<li>服装：船上室内恒温25摄氏度左右，请带一件外套。</li>
+<li>语言：船上以英语与国语为主。</li>
+<li>以上船票未含证件费、港务费、往返上海交通费用、岸上观光游费用 (费用自理) 。</li>
+<li>船上消费将以港币计算，可选择使用<code>现金</code>、<code>银联卡</code>及<code>信用卡</code>结账</li>
+</ol>
+<h2 id="">报名条件及所需材料：</h2>
+<ol>
+<li>中国公民持本人有效护照（有效期从返回出发地当日起6个月以上）并确保护照有2页以上空白签证页用于盖签证章。</li>
+<li>如游客持港澳台或外籍护照赴中国境外，情确保持有再次进入中国大陆的有效签证，如果因个人证件或签证原因造成无法按时出入境的，一切费用不退，以及因此产生相关费用均由客人自行承担！</li>
+<li>根据邮轮公司规定，不接受六个月以下婴儿及怀孕24周以上的孕妇预定邮轮旅游产品。</li>
+<li>18周岁以下未成年人，不与父母任何一方同住一间舱房，必须由父母填写《授权声明信》，由同舱房成年人填写《随行监护人承诺》，同时提交未成年人出生证明或户口复印件。</li>
+<li>凡70岁以上的游客，请填写《旅行健康声明》，了解自身身体健康风险，并购买高额旅游人身意外保险。</li>
+</ol>
+<h2 id="">关于取消</h2>
+<table>
+<thead>
+<tr>
+<th>开航前天数</th>
+<th>预定船舱收费</th>
+<th>取消预定船舱收费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>99-70天</td>
+<td>收取定金</td>
+<td>收取全额定金</td>
+</tr>
+<tr>
+<td>69-30天</td>
+<td>收取全款</td>
+<td>收取全额团款的80%</td>
+</tr>
+<tr>
+<td>29天以内</td>
+<td>收取全款</td>
+<td>收取全额团款</td>
+</tr>
+</tbody>
+</table>
+
+    </body>
+    </html>
