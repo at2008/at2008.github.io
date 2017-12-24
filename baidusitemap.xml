@@ -5,11 +5,32 @@
     
   <url>
     <loc>http://slowread.cn/2017/12/22/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC5%E7%AB%A0-%E7%B1%BB/</loc>
-    <lastmod>2017-12-23T17:47:42.597Z</lastmod>
+    <lastmod>2017-12-24T07:37:42.710Z</lastmod>
     <data>
         <display>
         <title>C#本质论笔记 第5章 类</title>
         <pubTime>2017-12-22T05:20:40.000Z</pubTime>
+        
+        <tag>C#</tag>
+         
+        <tag>C#本质论</tag>
+         
+        <tag>Essential C#</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2017-12-24T04:22:13.843Z</lastmod>
+    <data>
+        <display>
+        <title>C#本质论笔记 第2章 数据类型</title>
+        <pubTime>2017-12-13T08:27:35.000Z</pubTime>
         
         <tag>C#</tag>
          
@@ -75,27 +96,6 @@
         <tag>Hexo</tag>
          
         <tag>Next 主题</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2017-12-20T05:41:43.547Z</lastmod>
-    <data>
-        <display>
-        <title>C#本质论笔记 第2章 数据类型</title>
-        <pubTime>2017-12-13T08:27:35.000Z</pubTime>
-        
-        <tag>C#</tag>
-         
-        <tag>C#本质论</tag>
-         
-        <tag>Essential C#</tag>
          
          
            
