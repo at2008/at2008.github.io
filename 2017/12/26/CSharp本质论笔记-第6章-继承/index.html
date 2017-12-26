@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-26T09:48:05.160Z">
+<meta property="og:updated_time" content="2017-12-26T09:55:59.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第6章 继承">
 <meta name="twitter:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
@@ -382,6 +382,7 @@
 <li>派生类如果定义了与继承而来的成员同名的新成员，就可以覆盖已继承的成员。但这并不因为这派生类删除了这些成员，只是不能再访问这些成员。</li>
 <li>类可以定义虚文法、虚属性以及虚索引指示器，它的派生类能够重载这些成员，从而实现类可以展示出多态性。</li>
 </ul>
+<a id="more"></a>
 <h1 id="派生"><a href="#派生" class="headerlink" title="派生"></a>派生</h1><p>派生类只能有一个直接基类。 但是，继承是可传递的。 如果 ClassC 派生自 ClassB，并且 ClassB 派生自 ClassA，则 ClassC 会继承在 ClassB 和 ClassA 中声明的成员。</p>
 <blockquote>
 <p>从一个类派生出另一个类 <code>PdaItem类派生出Contact类</code>（一个类继承自另一个类 <code>Contact</code>类继承自<code>PdaItem</code>类）</p>
