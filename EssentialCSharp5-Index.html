@@ -3,15 +3,6 @@
     <head>
         <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
         <style>
-/*--------------------------------------------------------------------------------------------- * Copyright (c) Microsoft Corporation. All rights reserved. * Licensed under the MIT License. See License.txt in the project root for license information. *--------------------------------------------------------------------------------------------*/ body { font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback"; font-size: 14px; padding: 0 12px; line-height: 22px; word-wrap: break-word; } body.scrollBeyondLastLine { margin-bottom: calc(100vh - 22px); } body.showEditorSelection .code-line { position: relative; } body.showEditorSelection .code-active-line:before, body.showEditorSelection .code-line:hover:before { content: ""; display: block; position: absolute; top: 0; left: -12px; height: 100%; } body.showEditorSelection li.code-active-line:before, body.showEditorSelection li.code-line:hover:before { left: -30px; } .vscode-light.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(0, 0, 0, 0.15); } .vscode-light.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(0, 0, 0, 0.40); } .vscode-dark.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 255, 255, 0.4); } .vscode-dark.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 255, 255, 0.60); } .vscode-high-contrast.showEditorSelection .code-active-line:before { border-left: 3px solid rgba(255, 160, 0, 0.7); } .vscode-high-contrast.showEditorSelection .code-line:hover:before { border-left: 3px solid rgba(255, 160, 0, 1); } img { max-width: 100%; max-height: 100%; } a { color: #4080D0; text-decoration: none; } a:focus, input:focus, select:focus, textarea:focus { outline: 1px solid -webkit-focus-ring-color; outline-offset: -1px; } hr { border: 0; height: 2px; border-bottom: 2px solid; } h1 { padding-bottom: 0.3em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; } h1, h2, h3 { font-weight: normal; } h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { font-size: inherit; line-height: auto; } a:hover { color: #4080D0; text-decoration: underline; } table { border-collapse: collapse; } table > thead > tr > th { text-align: left; border-bottom: 1px solid; } table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td { padding: 5px 10px; } table > tbody > tr + tr > td { border-top: 1px solid; } blockquote { margin: 0 7px 0 5px; padding: 0 16px 0 10px; border-left: 5px solid; } code { font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback"; font-size: 14px; line-height: 19px; } body.wordWrap pre { white-space: pre-wrap; } .mac code { font-size: 12px; line-height: 18px; } code > div { padding: 16px; border-radius: 3px; overflow: auto; } /** Theming */ .vscode-light { color: rgb(30, 30, 30); } .vscode-dark { color: #DDD; } .vscode-high-contrast { color: white; } .vscode-light code { color: #A31515; } .vscode-dark code { color: #D7BA7D; } .vscode-light code > div { background-color: rgba(220, 220, 220, 0.4); } .vscode-dark code > div { background-color: rgba(10, 10, 10, 0.4); } .vscode-high-contrast code > div { background-color: rgb(0, 0, 0); } .vscode-high-contrast h1 { border-color: rgb(0, 0, 0); } .vscode-light table > thead > tr > th { border-color: rgba(0, 0, 0, 0.69); } .vscode-dark table > thead > tr > th { border-color: rgba(255, 255, 255, 0.69); } .vscode-light h1, .vscode-light hr, .vscode-light table > tbody > tr + tr > td { border-color: rgba(0, 0, 0, 0.18); } .vscode-dark h1, .vscode-dark hr, .vscode-dark table > tbody > tr + tr > td { border-color: rgba(255, 255, 255, 0.18); } .vscode-light blockquote, .vscode-dark blockquote { background: rgba(127, 127, 127, 0.1); border-color: rgba(0, 122, 204, 0.5); } .vscode-high-contrast blockquote { background: transparent; border-color: #fff; }
-</style>
-<style>
-/* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */ /* Tomorrow Comment */ .hljs-comment, .hljs-quote { color: #8e908c; } /* Tomorrow Red */ .hljs-variable, .hljs-template-variable, .hljs-tag, .hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-deletion { color: #c82829; } /* Tomorrow Orange */ .hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link { color: #f5871f; } /* Tomorrow Yellow */ .hljs-attribute { color: #eab700; } /* Tomorrow Green */ .hljs-string, .hljs-symbol, .hljs-bullet, .hljs-addition { color: #718c00; } /* Tomorrow Blue */ .hljs-title, .hljs-section { color: #4271ae; } /* Tomorrow Purple */ .hljs-keyword, .hljs-selector-tag { color: #8959a8; } .hljs { display: block; overflow-x: auto; color: #4d4d4c; padding: 0.5em; } .hljs-emphasis { font-style: italic; } .hljs-strong { font-weight: bold; }
-</style>
-<style>
-ul.contains-task-list { padding-left: 0; } ul ul.contains-task-list { padding-left: 40px; } .task-list-item { list-style-type: none; } .task-list-item-checkbox { vertical-align: middle; }
-</style>
-        <style>
             body {
                 font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif;
                 font-size: 14px;
@@ -22,25 +13,17 @@ ul.contains-task-list { padding-left: 0; } ul ul.contains-task-list { padding-le
     <body>
         <h1 id="c">C#本质论笔记</h1>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
 <tbody>
 <tr>
-<td><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0">第1章 CSharp概述</a></td>
-<td><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">第2章 数据类型</a></td>
-<td><a href="http://slowread.cn/2017/12/17/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC3%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E6%8E%A7%E5%88%B6%E6%B5%81/">第3章 操作符和控制流</a></td>
-<td><a href="http://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/">第4章 方法和参数</a></td>
+<td><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0" target="_blank">第1章 CSharp概述</a></td>
+<td><a href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" target="_blank">第2章 数据类型</a></td>
+<td><a href="http://slowread.cn/2017/12/17/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC3%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E6%8E%A7%E5%88%B6%E6%B5%81/ target="_blank"">第3章 操作符和控制流</a></td>
+<td><a href="http://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/" target="_blank">第4章 方法和参数</a></td>
 </tr>
 <tr>
-<td><a href="http://slowread.cn/2017/12/22/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC5%E7%AB%A0-%E7%B1%BB/">第5章 类</a></td>
-<td><a href="http://slowread.cn/2017/12/26/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC6%E7%AB%A0-%E7%BB%A7%E6%89%BF/">第6章 继承</a></td>
-<td><a href="http://slowread.cn/EssentialCSharp5-Index.html">第7章 ...</a></td>
+<td><a href="http://slowread.cn/2017/12/22/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC5%E7%AB%A0-%E7%B1%BB/" target="_blank">第5章 类</a></td>
+<td><a href="http://slowread.cn/2017/12/26/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC6%E7%AB%A0-%E7%BB%A7%E6%89%BF/ target="_blank"">第6章 继承</a></td>
+<td><a href="" target="_blank">第7章 ...</a></td>
 <td></td>
 </tr>
 <tr>
