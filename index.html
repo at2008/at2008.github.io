@@ -295,6 +295,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/26/CSharp本质论笔记-第6章-继承/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="At2008">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢读慢写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/26/CSharp本质论笔记-第6章-继承/" itemprop="url">C#本质论笔记 第6章 继承</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-26T10:41:00+08:00">
+                2017-12-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/12/26/CSharp本质论笔记-第6章-继承/" class="leancloud_visitors" data-flag-title="C#本质论笔记 第6章 继承">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：</p>
+<ul>
+<li>继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。</li>
+<li>派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。</li>
+<li>构造函数和析构函数不能被继承。除此之外的其它成员，不论对它们定义了怎样的访问方式，都能被继承。基类中成员的访问方式只能决定派生类能否访问它们。</li>
+<li>派生类如果定义了与继承而来的成员同名的新成员，就可以覆盖已继承的成员。但这并不因为这派生类删除了这些成员，只是不能再访问这些成员。</li>
+<li>类可以定义虚文法、虚属性以及虚索引指示器，它的派生类能够重载这些成员，从而实现类可以展示出多态性。</li>
+</ul>
+<h1 id="派生"><a href="#派生" class="headerlink" title="派生"></a>派生</h1><p>派生类只能有一个直接基类。 但是，继承是可传递的。 如果 ClassC 派生自 ClassB，并且 ClassB 派生自 ClassA，则 ClassC 会继承在 ClassB 和 ClassA 中声明的成员。</p>
+<blockquote>
+<p>从一个类派生出另一个类 <code>PdaItem类派生出Contact类</code>（一个类继承自另一个类 <code>Contact</code>类继承自<code>PdaItem</code>类）</p>
+</blockquote>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PdaItem</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Name &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    <span class="keyword">public</span> DateTime LastUpdated &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Define the Contact class as inheriting the PdaItem class</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Contact</span> : <span class="title">PdaItem</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Address &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> Phone &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>使用继承的属性</p>
+</blockquote>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Contact contact = <span class="keyword">new</span> Contact();</span><br><span class="line">        contact.Name = <span class="string">"Inigo Montoya"</span>;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Contact</code>类自身没有定义<code>Name</code>属性，但仍然可以使用继承自 <code>PdaItem</code> 类的<code>Name</code>属性，并把它作为 Contact自身的一部分使用。除此之外，从 Contact 派生的其他任何类也会继承 PdaItem 类(以及 PdaItem的父类)的成员。这个继承链条</p>
+<h2 id="基类和派生类之间的转换"><a href="#基类和派生类之间的转换" class="headerlink" title="基类和派生类之间的转换"></a>基类和派生类之间的转换</h2><ul>
+<li><p>派生类型的值可以直接赋值给基类型的值，不需要添加转型操作符，不会引发异常。</p>
+</li>
+<li><p>反之则不成立。从基类型转换为派生类型，要求执行<strong>显式转换</strong>，并且在运行时可能会失败。</p>
+</li>
+</ul>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">// Derived types can be implicitly converted to</span></span><br><span class="line">        <span class="comment">// base types</span></span><br><span class="line">        Contact contact = <span class="keyword">new</span> Contact();</span><br><span class="line">        PdaItem item = contact;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Base types must be cast explicitly to derived types</span></span><br><span class="line">        contact = (Contact)item;</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="private访问修饰符"><a href="#private访问修饰符" class="headerlink" title="private访问修饰符"></a>private访问修饰符</h2><p>派生类继承了除构造器和析构器之外的所有基类成员。但是，继承并不意味着一定能够访问。私有成员只能在声明他们的那个类中才能访问，派生类不能访问基类的private成员（除了一个例外，派生类同时是基类的一个嵌套类）。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PdaItem</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">string</span> _Name;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Contact</span> : <span class="title">PdaItem</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Program</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        Contact contact = <span class="keyword">new</span> Contact ();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// ERROR:  'PdaItem. _Name' is inaccessible</span></span><br><span class="line">        <span class="comment">// due to its protection level</span></span><br><span class="line">        <span class="comment">//contact._Name = "Inigo Montoya";  //uncomment this line and it will not compile</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="protected访问修饰符"><a href="#protected访问修饰符" class="headerlink" title="protected访问修饰符"></a>protected访问修饰符</h2><p>受保护成员在其所在的类中可由派生类实例访问。</p>
+<p>只有在通过派生类类型进行访问时，基类的受保护成员在派生类中才是可访问的。A protected member of a base class is accessible in a derived class only if the access occurs through the derived class type.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">A</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> x = <span class="number">123</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">B</span> : <span class="title">A</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        A a = <span class="keyword">new</span> A();</span><br><span class="line">        B b = <span class="keyword">new</span> B();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Error CS1540, because x can only be accessed by</span></span><br><span class="line">        <span class="comment">// classes derived from A.</span></span><br><span class="line">        <span class="comment">// a.x = 10;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// OK, because this class derives from A.</span></span><br><span class="line">        b.x = <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>语句 <code>a.x = 10</code> 生成错误，因为它是在静态方法 Main 中生成的，而不是类 B 的实例。The statement <code>a.x = 10</code> generates an error because it is made within the static method Main, and not an instance of class B.</p>
+<p>无法保护结构成员，因为无法继承结构。</p>
+<p>在此示例中，<code>DerivedPoint</code> 类是从 <code>Point</code> 派生的。In this example, the class <code>DerivedPoint</code> is derived from <code>Point</code>. 因此，可以从派生类直接访问基类的受保护成员。Therefore, you can access the protected members of the base class directly from the derived class.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">Point</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> x;</span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">int</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">DerivedPoint</span>: <span class="title">Point</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        DerivedPoint dpoint = <span class="keyword">new</span> DerivedPoint();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Direct access to protected members:</span></span><br><span class="line">        dpoint.x = <span class="number">10</span>;</span><br><span class="line">        dpoint.y = <span class="number">15</span>;</span><br><span class="line">        Console.WriteLine(<span class="string">"x = &#123;0&#125;, y = &#123;1&#125;"</span>, dpoint.x, dpoint.y);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Output: x = 10, y = 15</span></span><br></pre></td></tr></table></figure>
+<p>如果将 <code>x</code> 和 <code>y</code> 的访问级别更改为 <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/private" target="_blank" rel="noopener">private</a>，编译器将发出错误消息：</p>
+<p><code>&#39;Point.y&#39; is inaccessible due to its protection level.</code></p>
+<p><code>&#39;Point.x&#39; is inaccessible due to its protection level.</code></p>
+<h2 id="单继承-多继承-聚合（Aggregation）"><a href="#单继承-多继承-聚合（Aggregation）" class="headerlink" title="单继承 多继承 聚合（Aggregation）"></a>单继承 多继承 聚合（Aggregation）</h2><p>C++支持多继承，C#只支持单继承。在极少数需要多继承类结构的时候，一般的解决方案是使用聚合（Aggregation）；换言之，不是一个类从另外一个类继承，而是一个类包含另一个类的实例。</p>
+<blockquote>
+<p>用聚合解决单继承问题</p>
+</blockquote>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PdaItem</span> &#123;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Person</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> FirstName &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> LastName &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Contact</span> : <span class="title">PdaItem</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Person InternalPerson &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> FirstName &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> InternalPerson.FirstName; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; InternalPerson.FirstName = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">string</span> LastName &#123;</span><br><span class="line">        <span class="keyword">get</span> &#123; <span class="keyword">return</span> InternalPerson.LastName; &#125;</span><br><span class="line">        <span class="keyword">set</span> &#123; InternalPerson.LastName = <span class="keyword">value</span>; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>方法有点怪异，不够合理，有点多余。 ヾ(ﾟ∀ﾟゞ)ヾ(。￣□￣)ﾂ゜゜゜</p>
+<h2 id="密封类"><a href="#密封类" class="headerlink" title="密封类"></a>密封类</h2><p><code>sealed</code> 修饰符可阻止其他类继承自该类。在下面的示例中，类 <code>B</code> 继承自类 <code>A</code>，但没有类可以继承自类 <code>B</code>。</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">A</span> &#123;&#125;</span><br><span class="line"><span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">B</span> : <span class="title">A</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><code>System.String</code> 类型就是用<code>sealed</code>修饰符禁止了派生。下面的代码编译不通过：</p>
+</blockquote>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Program</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MyClass</span> : <span class="title">String</span> &#123; &#125;</span><br><span class="line"><span class="comment">/* 输出</span></span><br><span class="line"><span class="comment">错误  CS0509   “MyClass”: 无法从密封类型“string”派生</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h1 id="未完成"><a href="#未完成" class="headerlink" title="未完成"></a>未完成</h1><iframe src="http://slowread.cn/EssentialCSharp5-Index.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/22/CSharp本质论笔记-第5章-类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -863,172 +1042,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="At2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/" itemprop="url">C#本质论笔记 第3章 操作符和控制流</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-17T01:05:16+08:00">
-                2017-12-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/" class="leancloud_visitors" data-flag-title="C#本质论笔记 第3章 操作符和控制流">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="操作符-Operators"><a href="#操作符-Operators" class="headerlink" title="操作符 Operators"></a>操作符 Operators</h1><p>操作符，也叫<strong>运算符</strong>，英文：<strong>Operrators</strong>，见 Microsoft Docs <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/operators/index/" target="_blank" rel="noopener">C# 运算符</a>。</p>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>含义</th>
-<th>例子</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>一元运算符</td>
-<td>接受一个操作数的运算符</td>
-<td>++ 或 new</td>
-</tr>
-<tr>
-<td>二元运算符</td>
-<td>接受两个操作数的运算符</td>
-<td>+ - * /</td>
-</tr>
-<tr>
-<td>三元运算符</td>
-<td>接受三个操作数，C#中唯一的条件运算符</td>
-<td>?:</td>
-</tr>
-</tbody>
-</table>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1080,7 +1098,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
