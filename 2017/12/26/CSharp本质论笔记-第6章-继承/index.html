@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-26T09:55:59.558Z">
+<meta property="og:updated_time" content="2017-12-27T06:04:51.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第6章 继承">
 <meta name="twitter:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
@@ -424,7 +424,11 @@
 <p><code>System.String</code> 类型就是用<code>sealed</code>修饰符禁止了派生。下面的代码编译不通过：</p>
 </blockquote>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Program</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MyClass</span> : <span class="title">String</span> &#123; &#125;</span><br><span class="line"><span class="comment">/* 输出</span></span><br><span class="line"><span class="comment">错误  CS0509   “MyClass”: 无法从密封类型“string”派生</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h1 id="未完成"><a href="#未完成" class="headerlink" title="未完成"></a>未完成</h1><iframe src="http://slowread.cn/EssentialCSharp5-Index.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+<h1 id="基类的重写-过载-override"><a href="#基类的重写-过载-override" class="headerlink" title="基类的重写 过载 override"></a>基类的重写 过载 override</h1><p>overload 重载：指的是<strong>同一个类</strong>中有两个或多个名字相同但是<strong>参数不同</strong>的方法，(注:返回值不能区别函数是否重载)，<strong>重载没有关键字</strong>。</p>
+<p>override 重写 过载：指子类对父类中<strong>虚函数或抽象函数</strong>的“覆盖”（这也就是有些书将过载翻译为覆盖的原因），但是这种“覆盖”和用new关键字来覆盖是有区别的。</p>
+<p>new 覆盖：指的是不同类中（基类或派生类）有两个或多个返回类型、方法名、参数都相同，但是方法体不同的方法。但是这种覆盖是一种表面上的覆盖，所以也叫<strong>隐藏</strong>，被覆盖的父类方法是可以调用得到的。</p>
+<p>基类除了构造器和析构器之外，所有成员都可以在派生类中继承。</p>
+<h2 id="virtual"><a href="#virtual" class="headerlink" title="virtual"></a>virtual</h2><h1 id="未完成"><a href="#未完成" class="headerlink" title="未完成"></a>未完成</h1><iframe src="http://slowread.cn/EssentialCSharp5-Index.html" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
       
     </div>
     
@@ -669,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#派生"><span class="nav-number">1.</span> <span class="nav-text">派生</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基类和派生类之间的转换"><span class="nav-number">1.1.</span> <span class="nav-text">基类和派生类之间的转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#private访问修饰符"><span class="nav-number">1.2.</span> <span class="nav-text">private访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protected访问修饰符"><span class="nav-number">1.3.</span> <span class="nav-text">protected访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单继承-多继承-聚合（Aggregation）"><span class="nav-number">1.4.</span> <span class="nav-text">单继承 多继承 聚合（Aggregation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密封类"><span class="nav-number">1.5.</span> <span class="nav-text">密封类</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未完成"><span class="nav-number">2.</span> <span class="nav-text">未完成</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#派生"><span class="nav-number">1.</span> <span class="nav-text">派生</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基类和派生类之间的转换"><span class="nav-number">1.1.</span> <span class="nav-text">基类和派生类之间的转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#private访问修饰符"><span class="nav-number">1.2.</span> <span class="nav-text">private访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protected访问修饰符"><span class="nav-number">1.3.</span> <span class="nav-text">protected访问修饰符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单继承-多继承-聚合（Aggregation）"><span class="nav-number">1.4.</span> <span class="nav-text">单继承 多继承 聚合（Aggregation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密封类"><span class="nav-number">1.5.</span> <span class="nav-text">密封类</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基类的重写-过载-override"><span class="nav-number">2.</span> <span class="nav-text">基类的重写 过载 override</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#virtual"><span class="nav-number">2.1.</span> <span class="nav-text">virtual</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#未完成"><span class="nav-number">3.</span> <span class="nav-text">未完成</span></a></li></ol></div>
             
 
           </div>
@@ -733,6 +737,12 @@
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1325,6 +1335,31 @@
 
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   

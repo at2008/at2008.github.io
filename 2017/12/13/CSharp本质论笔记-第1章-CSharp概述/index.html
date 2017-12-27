@@ -83,19 +83,19 @@
 
 
 
-<meta name="description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库">
+<meta name="description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库 overload 重载：指的是同一个类中有两个或多个名字相同但是参数不同的方法，(注:返回值不能区别函数是否重载)，重载没有关键字。 overr">
 <meta name="keywords" content="C#,C#本质论,Essential C#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C#本质论笔记 第1章 C#概述">
 <meta property="og:url" content="http://slowread.cn/2017/12/13/CSharp本质论笔记-第1章-CSharp概述/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库">
+<meta property="og:description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库 overload 重载：指的是同一个类中有两个或多个名字相同但是参数不同的方法，(注:返回值不能区别函数是否重载)，重载没有关键字。 overr">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://slowread.cn/images/material/EssentialCSharp5.jpg">
-<meta property="og:updated_time" content="2017-12-25T14:51:38.067Z">
+<meta property="og:updated_time" content="2017-12-27T03:24:27.556Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第1章 C#概述">
-<meta name="twitter:description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库">
+<meta name="twitter:description" content="名词解释 CLI   Common Language Infrastructure  公共语言基础结构 CIL   Common Intermediate Language    公共中间语言 BCL   Base Class Library 基础类库 overload 重载：指的是同一个类中有两个或多个名字相同但是参数不同的方法，(注:返回值不能区别函数是否重载)，重载没有关键字。 overr">
 <meta name="twitter:image" content="http://slowread.cn/images/material/EssentialCSharp5.jpg">
 
 
@@ -381,6 +381,9 @@
 <li>CLI   Common Language Infrastructure  公共语言基础结构</li>
 <li>CIL   Common Intermediate Language    公共中间语言</li>
 <li>BCL   Base Class Library 基础类库</li>
+<li>overload 重载：指的是<strong>同一个类</strong>中有两个或多个名字相同但是<strong>参数不同</strong>的方法，(注:返回值不能区别函数是否重载)，<strong>重载没有关键字</strong>。</li>
+<li>override 重写 过载：指子类对父类中<strong>虚函数或抽象函数</strong>的“覆盖”（这也就是有些书将过载翻译为覆盖的原因），但是这种“覆盖”和用new关键字来覆盖是有区别的。</li>
+<li>new 覆盖：指的是不同类中（基类或派生类）有两个或多个返回类型、方法名、参数都相同，但是方法体不同的方法。但是这种覆盖是一种表面上的覆盖，所以也叫<strong>隐藏</strong>，被覆盖的父类方法是可以调用得到的。</li>
 </ul>
 <a id="more"></a>
 <h1 id="HelloWorld"><a href="#HelloWorld" class="headerlink" title="HelloWorld"></a>HelloWorld</h1><h2 id="本书中的例子"><a href="#本书中的例子" class="headerlink" title="本书中的例子"></a>本书中的例子</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">HelloWorld</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        System.Console.WriteLine(<span class="string">"Hello World!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -852,6 +855,12 @@ Hello Snow, Jon.
       </div>
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
   </div>
@@ -1444,6 +1453,31 @@ Hello Snow, Jon.
 
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
   
 
   
