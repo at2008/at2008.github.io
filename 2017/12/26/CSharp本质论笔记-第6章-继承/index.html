@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-28T07:09:18.454Z">
+<meta property="og:updated_time" content="2017-12-28T15:46:55.941Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C#本质论笔记 第6章 继承">
 <meta name="twitter:description" content="通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：  继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。 派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。 构造函数和析构函数不能被继承。除此之外的其它成员">
@@ -483,6 +483,11 @@
 <li>抽象成员应当被重写，所以自动成为虚成员（但不能用<code>virtual</code>关键字显示声明）。</li>
 <li>抽象成员不能声明为私有，私有的话派生类看不到它们。</li>
 </ul>
+<p>理解：</p>
+<ul>
+<li>abstract 抽象：显式 <code>⬇</code> 强制要求所有派生类来提供实现。</li>
+<li>override 替代：显式 <code>⬆</code> 强制重写基类成员，。</li>
+</ul>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title">A</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// Class members here.</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>抽象类不能实例化</strong>。抽象类的用途是提供一个可供多个派生类共享的通用基类定义。例如，类库可以定义一个抽象类，将其用作多个类库函数的参数，并要求使用该库的程序员通过创建派生类来提供自己的类实现。</p>
 <p>抽象类也可以定义抽象方法。方法是将关键字 <code>abstract</code> 添加到方法的返回类型的前面。</p>
@@ -757,6 +762,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/12/28/CSharp本质论笔记-第7章-接口/" rel="prev" title="C#本质论笔记 第7章 接口">
+                C#本质论笔记 第7章 接口 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -843,7 +852,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
