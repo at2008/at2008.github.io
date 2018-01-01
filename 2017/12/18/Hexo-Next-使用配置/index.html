@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="Pisces子主题页面留白太多问题修改 next/source/css/_schemes/Pisces/_layout.styl 文件中下面的字段内容： 123.header&amp;#123; width: 80%; &amp;#125; /* 80% */.container .main-inner &amp;#123; width: 80%; &amp;#125; /* 80% */.content-wrap &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-01T12:31:23.187Z">
+<meta property="og:updated_time" content="2018-01-01T12:33:51.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next 使用配置">
 <meta name="twitter:description" content="Pisces子主题页面留白太多问题修改 next/source/css/_schemes/Pisces/_layout.styl 文件中下面的字段内容： 123.header&amp;#123; width: 80%; &amp;#125; /* 80% */.container .main-inner &amp;#123; width: 80%; &amp;#125; /* 80% */.content-wrap &amp;#123;">
@@ -379,6 +379,7 @@
         <h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>next/source/css/_schemes/Pisces/_layout.styl</code> 文件中下面的字段内容：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header</span>&#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
 <p>完整文件参见 <a href="https://github.com/xiao-fang/xiao-fang.github.io/blob/3a95f3919a90bf56738016f9eb8a59e5bfab4a22/themes/next/source/css/_schemes/Pisces/_layout.styl" target="_blank" rel="noopener">这个地址</a>。</p>
+<a id="more"></a>
 <h1 id="首页文章增加阴影分割效果"><a href="#首页文章增加阴影分割效果" class="headerlink" title="首页文章增加阴影分割效果"></a>首页文章增加阴影分割效果</h1><ol>
 <li>修改文件 <code>\themes\next\source\css\_custom\custom.styl</code>，增加以下内容：</li>
 </ol>
@@ -399,7 +400,6 @@
 <li>直接使用 HTML 语句</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"http://example.com"</span> <span class="attr">width</span>=<span class="string">"700px"</span> <span class="attr">height</span>=<span class="string">"500px"</span> <span class="attr">frameborder</span>=<span class="string">"0"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
 <h1 id="指定在新窗口打开文章中的链接"><a href="#指定在新窗口打开文章中的链接" class="headerlink" title="指定在新窗口打开文章中的链接"></a>指定在新窗口打开文章中的链接</h1><ul>
 <li>使用 Hexo 标签插件</li>
 </ul>
