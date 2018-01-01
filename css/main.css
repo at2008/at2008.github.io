@@ -2020,7 +2020,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9dff93;
+  background: #a2ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3117,7 +3117,6 @@ pre .javascript .function {
   position: absolute;
 }
 .site-overview {
-  margin: 0 2px;
   text-align: left;
 }
 .site-author:before,
@@ -3253,8 +3252,27 @@ pre {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  -webkit-box-shadow: 0 0 15px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 15px rgba(202,203,204,0.5);
+}
+.post-button {
+  margin-top: 30px;
+  text-align: center;
+}
+.post-button .btn {
+  color: #fff;
+  font-size: 15px;
+  background: #686868;
+  border-radius: 16px;
+  line-height: 2;
+  margin: 0 4px 8px 4px;
+  padding: 0 20px;
+}
+.post-button a {
+  border-bottom: 1px solid #666;
+}
+.post-button a:hover {
+  color: #7784ba;
 }
 ul {
   list-style-type: circle;
