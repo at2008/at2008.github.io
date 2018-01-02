@@ -959,9 +959,22 @@
 
       
         
-          <h1 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h1><p>第一步：安装numlockx，输入命令</p>
+          <h1 id="vim-编辑工具使用提示"><a href="#vim-编辑工具使用提示" class="headerlink" title="vim 编辑工具使用提示"></a>vim 编辑工具使用提示</h1><blockquote>
+<p><code>vi</code> 或者 <code>vim</code>，视Linux发行版本而定</p>
+</blockquote>
+<ul>
+<li>键入 i 切换到插入模式</li>
+<li>键入 d 删除模式，然后，d 删除字符，dd删除整行</li>
+<li>方向键调整光标到插入位置，复制粘贴代码</li>
+<li>Esc键退出插入模式，回到默认的命令模式</li>
+<li>按Esc后，键入 :wq 表示保存并退出</li>
+<li>按Esc后，键入 :q! 强制不保存退出</li>
+</ul>
+<h1 id="elementary-OS"><a href="#elementary-OS" class="headerlink" title="elementary OS"></a>elementary OS</h1><p>第一步：安装numlockx，输入命令</p>
 <pre><code>sudo apt-get install numlockx
-</code></pre><p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件，取消numlock行前面的 #</p>
+</code></pre><p>第二步：用 vim 打开 /etc/lightdm/pantheon-greeter.conf 文件</p>
+<pre><code>sudo vi /etc/lightdm/pantheon-greeter.conf
+</code></pre><p>第三步：取消numlock行前面的 #</p>
 <pre><code># activate-numlock=true.
 </code></pre>
           <!--noindex-->
