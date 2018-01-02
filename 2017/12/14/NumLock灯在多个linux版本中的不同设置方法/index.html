@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu.jpg">
 <meta property="og:image" content="http://slowread.cn/images/material/linux-numlock-ubuntu-other.png">
-<meta property="og:updated_time" content="2018-01-02T09:07:47.422Z">
+<meta property="og:updated_time" content="2018-01-02T09:08:42.180Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NumLock灯在多个linux版本中的不同设置方法">
 <meta name="twitter:description" content="vim 编辑工具使用提示 vi 或者 vim，视Linux发行版本而定   键入 i 切换到插入模式 键入 d 删除模式，然后，d 删除字符，dd删除整行 方向键调整光标到插入位置，复制粘贴代码 Esc键退出插入模式，回到默认的命令模式 按Esc后，键入 :wq 表示保存并退出 按Esc后，键入 :q! 强制不保存退出  elementary OS第一步：安装numlockx，输入命令 sudo">
@@ -410,10 +410,6 @@
 <pre><code>sudo vi /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
 </code></pre><p>第三步：在打开的文件中添加一行下面命令：</p>
 <pre><code>greeter-setup-script=/usr/bin/numlockx on
-</code></pre><blockquote>
-<p>Tips: 敲入下面命令编辑文件</p>
-</blockquote>
-<pre><code>sudo vi /etc/lightdm/lightdm.conf
 </code></pre><p>结果如下图：</p>
 <p><img src="http://slowread.cn/images/material/linux-numlock-mint-ferenos.png" alt="image"></p>
 <p>同样的，重启或者注销后，生效。</p>
