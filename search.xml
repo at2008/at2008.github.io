@@ -4,6 +4,12 @@
     <title><![CDATA[VSCdoe+插件 使用配置记录]]></title>
     <url>%2F2018%2F01%2F03%2FVSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[HTML 中 CSS Class 智能提示1.安装插件：HTML CSS Support 2.设置中添加以下代码： &quot;editor.parameterHints&quot;: true, &quot;editor.quickSuggestions&quot;: { &quot;other&quot;: true, &quot;comments&quot;: true, &quot;strings&quot;: true 查看 HTML 样式在 CSS 中的定义安装插件：CSS Peek 不同代码文件 Tab 键设定设置中添加以下代码： &quot;[html]&quot;: { &quot;editor.tabSize&quot;: 4 }, &quot;[css]&quot;: { &quot;editor.tabSize&quot;: 4 }, &quot;[javascript]&quot;: { // 按 &quot;Tab&quot; 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。 &quot;editor.insertSpaces&quot;: true, // 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。 &quot;editor.tabSize&quot;: 2 }, &quot;[typescript]&quot;: { &quot;editor.tabSize&quot;: 2 }, &quot;editor.parameterHints&quot;: true, &quot;editor.quickSuggestions&quot;: { &quot;other&quot;: true, &quot;comments&quot;: true, &quot;strings&quot;: true } 标题栏显示文件全路径名设置中添加以下代码： &quot;window.title&quot;: &quot;${activeEditorLong}&quot; 文件自动保存设置中添加以下代码： &quot;files.autoSave&quot;: &quot;onFocusChange&quot;]]></content>
+      <tags>
+        <tag>VSCode</tag>
+        <tag>插件</tag>
+        <tag>Visual Studio</tag>
+        <tag>Visual Studio Code</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[C#本质论笔记 第7章 接口]]></title>

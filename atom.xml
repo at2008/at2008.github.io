@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2018-01-03T12:33:11.373Z</updated>
+  <updated>2018-01-03T12:34:40.579Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
     <id>http://slowread.cn/2018/01/03/VSCdoe-插件-使用配置记录/</id>
     <published>2018-01-03T12:19:01.000Z</published>
-    <updated>2018-01-03T12:33:11.373Z</updated>
+    <updated>2018-01-03T12:34:40.579Z</updated>
     
     <content type="html"><![CDATA[<h1 id="HTML-中-CSS-Class-智能提示"><a href="#HTML-中-CSS-Class-智能提示" class="headerlink" title="HTML 中 CSS Class 智能提示"></a>HTML 中 CSS Class 智能提示</h1><p>1.安装插件：<a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank" rel="noopener">HTML CSS Support</a></p><p>2.设置中添加以下代码：</p><pre><code>&quot;editor.parameterHints&quot;: true,&quot;editor.quickSuggestions&quot;: {    &quot;other&quot;: true,    &quot;comments&quot;: true,    &quot;strings&quot;: true</code></pre><h1 id="查看-HTML-样式在-CSS-中的定义"><a href="#查看-HTML-样式在-CSS-中的定义" class="headerlink" title="查看 HTML 样式在 CSS 中的定义"></a>查看 HTML 样式在 CSS 中的定义</h1><p>安装插件：<a href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek" target="_blank" rel="noopener">CSS Peek</a></p><p><img src="https://github.com/pranaygp/vscode-css-peek/raw/master/working.gif" alt="alt"></p><h1 id="不同代码文件-Tab-键设定"><a href="#不同代码文件-Tab-键设定" class="headerlink" title="不同代码文件 Tab 键设定"></a>不同代码文件 Tab 键设定</h1><p>设置中添加以下代码：</p><pre><code>&quot;[html]&quot;: {    &quot;editor.tabSize&quot;: 4},&quot;[css]&quot;: {    &quot;editor.tabSize&quot;: 4},&quot;[javascript]&quot;: {    // 按 &quot;Tab&quot; 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。    &quot;editor.insertSpaces&quot;: true,    // 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。    &quot;editor.tabSize&quot;: 2},&quot;[typescript]&quot;: {    &quot;editor.tabSize&quot;: 2},&quot;editor.parameterHints&quot;: true,&quot;editor.quickSuggestions&quot;: {    &quot;other&quot;: true,    &quot;comments&quot;: true,    &quot;strings&quot;: true}</code></pre><h1 id="标题栏显示文件全路径名"><a href="#标题栏显示文件全路径名" class="headerlink" title="标题栏显示文件全路径名"></a>标题栏显示文件全路径名</h1><p>设置中添加以下代码：</p><pre><code>&quot;window.title&quot;: &quot;${activeEditorLong}&quot;</code></pre><h1 id="文件自动保存"><a href="#文件自动保存" class="headerlink" title="文件自动保存"></a>文件自动保存</h1><p>设置中添加以下代码：</p><pre><code>&quot;files.autoSave&quot;: &quot;onFocusChange&quot;</code></pre>]]></content>
     
@@ -34,6 +34,14 @@
     
     </summary>
     
+    
+      <category term="VSCode" scheme="http://slowread.cn/tags/VSCode/"/>
+    
+      <category term="插件" scheme="http://slowread.cn/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+      <category term="Visual Studio" scheme="http://slowread.cn/tags/Visual-Studio/"/>
+    
+      <category term="Visual Studio Code" scheme="http://slowread.cn/tags/Visual-Studio-Code/"/>
     
   </entry>
   
