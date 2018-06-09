@@ -4,12 +4,31 @@
 
     
   <url>
-    <loc>http://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/</loc>
-    <lastmod>2018-01-17T09:06:08.728Z</lastmod>
+    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-06-09T02:19:04.126Z</lastmod>
     <data>
         <display>
-        <title>C#本质论笔记 第7章 接口</title>
-        <pubTime>2017-12-28T13:43:32.000Z</pubTime>
+        <title>Windows 系统常用工具软件</title>
+        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>工具软件</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2018/05/12/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2018-05-12T13:32:45.986Z</lastmod>
+    <data>
+        <display>
+        <title>CSharp本质论笔记 第8章 值类型</title>
+        <pubTime>2018-05-12T12:51:15.000Z</pubTime>
         
         <tag>C#</tag>
          
@@ -25,16 +44,18 @@
 
     
   <url>
-    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2018-01-09T02:51:42.852Z</lastmod>
+    <loc>http://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/</loc>
+    <lastmod>2018-05-12T12:00:11.704Z</lastmod>
     <data>
         <display>
-        <title>Windows 系统常用工具软件</title>
-        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
+        <title>C#本质论笔记 第7章 接口</title>
+        <pubTime>2017-12-28T13:43:32.000Z</pubTime>
         
-        <tag>Windows</tag>
+        <tag>C#</tag>
          
-        <tag>工具软件</tag>
+        <tag>C#本质论</tag>
+         
+        <tag>Essential C#</tag>
          
          
            

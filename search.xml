@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CSharp本质论笔记 第8章 值类型]]></title>
+    <url>%2F2018%2F05%2F12%2FCSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。 引用类型与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去那个位置找到对象实例的数据。]]></content>
+      <tags>
+        <tag>C#</tag>
+        <tag>C#本质论</tag>
+        <tag>Essential C#</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[VSCdoe+插件 使用配置记录]]></title>
     <url>%2F2018%2F01%2F03%2FVSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95%2F</url>
     <content type="text"><![CDATA[HTML 中 CSS Class 智能提示1.安装插件：HTML CSS Support 2.设置中添加以下代码： 12345"editor.parameterHints": true,"editor.quickSuggestions": &#123; "other": true, "comments": true, "strings": true 查看 HTML 样式在 CSS 中的定义安装插件：CSS Peek，当你在 HTML 文件中右键单击选择器时，选择“ Go to Definition 和 Peek definition ”选项，它便会给你发送样式设置的 CSS 代码。 不同代码文件 Tab 键设定设置中添加以下代码： 123456789101112131415"[html]": &#123; "editor.tabSize": 4&#125;,"[css]": &#123; "editor.tabSize": 4&#125;,"[javascript]": &#123; // 按 "Tab" 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。 "editor.insertSpaces": true, // 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。 "editor.tabSize": 2&#125;,"[typescript]": &#123; "editor.tabSize": 2&#125; 标题栏显示文件全路径名设置中添加以下代码： 1"window.title": "$&#123;activeEditorLong&#125;" 文件自动保存设置中添加以下代码： 1"files.autoSave": "onFocusChange"]]></content>
