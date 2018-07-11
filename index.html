@@ -301,6 +301,157 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2018/07/11/Python学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="At2008">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢读慢写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/11/Python学习笔记/" itemprop="url">Python学习笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-11T17:14:52+08:00">
+                2018-07-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/11/Python学习笔记/" class="leancloud_visitors" data-flag-title="Python学习笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Python-学习笔记"><a href="#Python-学习笔记" class="headerlink" title="Python 学习笔记"></a>Python 学习笔记</h1><h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
+<p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
+<p>但是此时shell中的状态是：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>首行会有一个0。这个0实际上是os.system()的返回值，0是成功，非零即error code（具体os.system()与命令返回值的对应关系可参考<a href="http://xingyunbaijunwei.blog.163.com/blog/static/76538067201341342330373/" target="_blank" rel="noopener">这里</a>）。</p>
+<p> 可以存储这个返回值，不让其打印出来：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
+<p>这样就是真正的清屏了：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="python下编译-py-为-pyc"><a href="#python下编译-py-为-pyc" class="headerlink" title="python下编译 .py 为 .pyc"></a>python下编译 .py 为 .pyc</h2><p>生成单个pyc文件：<br>命令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m py_compile file.py</span><br><span class="line">python -m py_compile /root/src/&#123;file1,file2&#125;.py</span><br></pre></td></tr></table></figure>
+<p>脚本：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> py_compile</span><br><span class="line">py_compile.compile(<span class="string">'path'</span>) //path是包括.py文件名的路径</span><br></pre></td></tr></table></figure>
+<p>批量生成pyc文件：<br>命令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m compileall /root/src/</span><br></pre></td></tr></table></figure>
+<p>脚本：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> compileall</span><br><span class="line">compileall.compile_dir(<span class="string">r'H:\game'</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>生成pyc文件后删除原py文件，直接执行pyc文件（方法同py文件）</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://slowread.cn/2018/05/12/CSharp本质论笔记-第8章-值类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -842,143 +993,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/22/CSharp本质论笔记-第5章-类/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="At2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/22/CSharp本质论笔记-第5章-类/" itemprop="url">C#本质论笔记 第5章 类</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T13:20:40+08:00">
-                2017-12-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/12/22/CSharp本质论笔记-第5章-类/" class="leancloud_visitors" data-flag-title="C#本质论笔记 第5章 类">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="类的定义和实例化"><a href="#类的定义和实例化" class="headerlink" title="类的定义和实例化"></a>类的定义和实例化</h1><p>类和对象都能关联数据，将类想象成模具，将对象想象成根据模具浇筑出来的零件，可以更好理解这一点。</p>
-<p>使用类，可以通过组合其他类型的变量、方法和事件创建自己的自定义类型。A <em>class</em> is a construct that enables you to create your own custom types by grouping together variables of other types, methods and events. 类好比是蓝图。A class is like a blueprint. 它定义类型的数据和行为。It defines the data and behavior of a type. 如果类未声明为静态，客户端代码就可以通过创建分配给变量的<em>对象</em>或<em>实例</em>来使用该类。If the class is not declared as static, client code can use it by creating <em>objects</em> or <em>instances</em> which are assigned to a variable. 变量会一直保留在内存中，直至对变量的所有引用超出范围为止。The variable remains in memory until all references to it go out of scope. 超出范围时，CLR 将对其进行标记，以便用于垃圾回收。At that time, the CLR marks it as eligible for garbage collection. 如果类声明为<a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/static" target="_blank" rel="noopener">静态</a>，则内存中只有一个副本，且客户端代码只能通过类本身，而不是<em>实例变量</em>来访问它。If the class is declared as <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/static" target="_blank" rel="noopener">static</a>, then only one copy exists in memory and client code can only access it through the class itself, not an <em>instance variable</em>. 有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members" target="_blank" rel="noopener">静态类和静态类成员</a>。For more information, see <a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members" target="_blank" rel="noopener">Static Classes and Static Class Members</a>.</p>
-<p>与结构不同，类支持<em>继承</em>，这是面向对象的编程的一个基本特点。Unlike structs, classes support <em>inheritance</em>, a fundamental characteristic of object-oriented programming. 有关详细信息，请参阅<a href="https://docs.microsoft.com/zh-cn/dotnet/csharp/programming-guide/classes-and-structs/inheritance" target="_blank" rel="noopener">继承</a>。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/22/CSharp本质论笔记-第5章-类/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1035,7 +1049,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1048,7 +1062,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

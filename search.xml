@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python学习笔记]]></title>
+    <url>%2F2018%2F07%2F11%2FPython%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[Python 学习笔记python交互模式下清屏在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。 在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。 12&gt;&gt;&gt; import os&gt;&gt;&gt; os.system('clear') 但是此时shell中的状态是： 120&gt;&gt;&gt; 首行会有一个0。这个0实际上是os.system()的返回值，0是成功，非零即error code（具体os.system()与命令返回值的对应关系可参考这里）。 可以存储这个返回值，不让其打印出来： 12&gt;&gt;&gt; import os&gt;&gt;&gt; t = os.system('clear') 这样就是真正的清屏了： 1&gt;&gt;&gt; python下编译 .py 为 .pyc生成单个pyc文件：命令： 12python -m py_compile file.pypython -m py_compile /root/src/&#123;file1,file2&#125;.py 脚本： 12import py_compilepy_compile.compile('path') //path是包括.py文件名的路径 批量生成pyc文件：命令： 1python -m compileall /root/src/ 脚本： 12import compileallcompileall.compile_dir(r'H:\game') 生成pyc文件后删除原py文件，直接执行pyc文件（方法同py文件）]]></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSharp本质论笔记 第8章 值类型]]></title>
     <url>%2F2018%2F05%2F12%2FCSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。 引用类型与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去那个位置找到对象实例的数据。]]></content>

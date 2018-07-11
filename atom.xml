@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://slowread.cn/"/>
-  <updated>2018-05-12T13:32:45.986Z</updated>
+  <updated>2018-07-11T09:16:20.105Z</updated>
   <id>http://slowread.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习笔记</title>
+    <link href="http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://slowread.cn/2018/07/11/Python学习笔记/</id>
+    <published>2018-07-11T09:14:52.000Z</published>
+    <updated>2018-07-11T09:16:20.105Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Python-学习笔记"><a href="#Python-学习笔记" class="headerlink" title="Python 学习笔记"></a>Python 学习笔记</h1><h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p><p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure><p>但是此时shell中的状态是：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure><p>首行会有一个0。这个0实际上是os.system()的返回值，0是成功，非零即error code（具体os.system()与命令返回值的对应关系可参考<a href="http://xingyunbaijunwei.blog.163.com/blog/static/76538067201341342330373/" target="_blank" rel="noopener">这里</a>）。</p><p> 可以存储这个返回值，不让其打印出来：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure><p>这样就是真正的清屏了：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure><h2 id="python下编译-py-为-pyc"><a href="#python下编译-py-为-pyc" class="headerlink" title="python下编译 .py 为 .pyc"></a>python下编译 .py 为 .pyc</h2><p>生成单个pyc文件：<br>命令：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m py_compile file.py</span><br><span class="line">python -m py_compile /root/src/&#123;file1,file2&#125;.py</span><br></pre></td></tr></table></figure><p>脚本：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> py_compile</span><br><span class="line">py_compile.compile(<span class="string">'path'</span>) //path是包括.py文件名的路径</span><br></pre></td></tr></table></figure><p>批量生成pyc文件：<br>命令：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m compileall /root/src/</span><br></pre></td></tr></table></figure><p>脚本：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> compileall</span><br><span class="line">compileall.compile_dir(<span class="string">r'H:\game'</span>)</span><br></pre></td></tr></table></figure><blockquote><p>生成pyc文件后删除原py文件，直接执行pyc文件（方法同py文件）</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Python-学习笔记&quot;&gt;&lt;a href=&quot;#Python-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Python 学习笔记&quot;&gt;&lt;/a&gt;Python 学习笔记&lt;/h1&gt;&lt;h2 id=&quot;python交互模式下清屏&quot;&gt;&lt;a href=&quot;#pyth
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="http://slowread.cn/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>CSharp本质论笔记 第8章 值类型</title>
