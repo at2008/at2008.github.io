@@ -5,13 +5,34 @@
     
   <url>
     <loc>http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-07-11T09:16:20.105Z</lastmod>
+    <lastmod>2018-07-11T09:18:57.207Z</lastmod>
     <data>
         <display>
-        <title>Python学习笔记</title>
+        <title>Python 学习笔记</title>
         <pubTime>2018-07-11T09:14:52.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2018/05/12/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B/</loc>
+    <lastmod>2018-07-11T09:18:39.038Z</lastmod>
+    <data>
+        <display>
+        <title>CSharp本质论笔记 第8章 值类型</title>
+        <pubTime>2018-05-12T12:51:15.000Z</pubTime>
+        
+        <tag>C#</tag>
+         
+        <tag>C#本质论</tag>
+         
+        <tag>Essential C#</tag>
          
          
            
@@ -46,27 +67,6 @@
         <display>
         <title>C#本质论笔记 第2章 数据类型</title>
         <pubTime>2017-12-13T08:27:35.000Z</pubTime>
-        
-        <tag>C#</tag>
-         
-        <tag>C#本质论</tag>
-         
-        <tag>Essential C#</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2018/05/12/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B/</loc>
-    <lastmod>2018-05-12T13:32:45.986Z</lastmod>
-    <data>
-        <display>
-        <title>CSharp本质论笔记 第8章 值类型</title>
-        <pubTime>2018-05-12T12:51:15.000Z</pubTime>
         
         <tag>C#</tag>
          

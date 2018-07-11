@@ -320,7 +320,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/11/Python学习笔记/" itemprop="url">Python学习笔记</a></h1>
+                <a class="post-title-link" href="/2018/07/11/Python学习笔记/" itemprop="url">Python 学习笔记</a></h1>
         
 
         <div class="post-meta">
@@ -350,7 +350,7 @@
 
           
           
-             <span id="/2018/07/11/Python学习笔记/" class="leancloud_visitors" data-flag-title="Python学习笔记">
+             <span id="/2018/07/11/Python学习笔记/" class="leancloud_visitors" data-flag-title="Python 学习笔记">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -382,30 +382,18 @@
 
       
         
-          
-            <h1 id="Python-学习笔记"><a href="#Python-学习笔记" class="headerlink" title="Python 学习笔记"></a>Python 学习笔记</h1><h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
+          <h1 id="Python-学习笔记"><a href="#Python-学习笔记" class="headerlink" title="Python 学习笔记"></a>Python 学习笔记</h1><h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
 <p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
 <p>但是此时shell中的状态是：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
-<p>首行会有一个0。这个0实际上是os.system()的返回值，0是成功，非零即error code（具体os.system()与命令返回值的对应关系可参考<a href="http://xingyunbaijunwei.blog.163.com/blog/static/76538067201341342330373/" target="_blank" rel="noopener">这里</a>）。</p>
-<p> 可以存储这个返回值，不让其打印出来：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
-<p>这样就是真正的清屏了：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="python下编译-py-为-pyc"><a href="#python下编译-py-为-pyc" class="headerlink" title="python下编译 .py 为 .pyc"></a>python下编译 .py 为 .pyc</h2><p>生成单个pyc文件：<br>命令：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m py_compile file.py</span><br><span class="line">python -m py_compile /root/src/&#123;file1,file2&#125;.py</span><br></pre></td></tr></table></figure>
-<p>脚本：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> py_compile</span><br><span class="line">py_compile.compile(<span class="string">'path'</span>) //path是包括.py文件名的路径</span><br></pre></td></tr></table></figure>
-<p>批量生成pyc文件：<br>命令：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m compileall /root/src/</span><br></pre></td></tr></table></figure>
-<p>脚本：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> compileall</span><br><span class="line">compileall.compile_dir(<span class="string">r'H:\game'</span>)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>生成pyc文件后删除原py文件，直接执行pyc文件（方法同py文件）</p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/11/Python学习笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -533,13 +521,17 @@
 
       
         
-          
-            <h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><h2 id="初学者主题"><a href="#初学者主题" class="headerlink" title="初学者主题"></a>初学者主题</h2><p>再次介绍<code>值类型</code>和<code>引用类型</code>，温故知新。</p>
+          <h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><h2 id="初学者主题"><a href="#初学者主题" class="headerlink" title="初学者主题"></a>初学者主题</h2><p>再次介绍<code>值类型</code>和<code>引用类型</code>，温故知新。</p>
 <h3 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h3><p>值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。</p>
 <pre><code>由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。
-</code></pre><h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去那个位置找到对象实例的数据。</p>
-
-          
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/12/CSharp本质论笔记-第8章-值类型/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

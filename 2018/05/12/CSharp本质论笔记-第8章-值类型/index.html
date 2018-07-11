@@ -85,18 +85,18 @@
 
 
 
-<meta name="description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。 引用类型与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去">
+<meta name="description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。">
 <meta name="keywords" content="C#,C#本质论,Essential C#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSharp本质论笔记 第8章 值类型">
 <meta property="og:url" content="http://slowread.cn/2018/05/12/CSharp本质论笔记-第8章-值类型/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。 引用类型与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去">
+<meta property="og:description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-12T13:32:45.986Z">
+<meta property="og:updated_time" content="2018-07-11T09:18:39.038Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSharp本质论笔记 第8章 值类型">
-<meta name="twitter:description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。 引用类型与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去">
+<meta name="twitter:description" content="结构初学者主题再次介绍值类型和引用类型，温故知新。 值类型值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。 由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。">
 
 
 
@@ -383,7 +383,8 @@
         <h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><h2 id="初学者主题"><a href="#初学者主题" class="headerlink" title="初学者主题"></a>初学者主题</h2><p>再次介绍<code>值类型</code>和<code>引用类型</code>，温故知新。</p>
 <h3 id="值类型"><a href="#值类型" class="headerlink" title="值类型"></a>值类型</h3><p>值类型直接包含值，换言之，变量引用的位置就是值在内存中实际存储的位置。因此，将一个原始变量的值赋值给另一个变量，会在新变量的位置创建原始变量值的一个内存副本。</p>
 <pre><code>由于值类型需要有一个内训副本，所以定义时通常不需要让他们消耗太多内存（通常应该小于16字节）。
-</code></pre><h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去那个位置找到对象实例的数据。</p>
+</code></pre><a id="more"></a>
+<h3 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h3><p>与值类型不同，引用类型的变量的值是对一个对象实例的引用（通常是内存地址），要去那个位置找到对象实例的数据。</p>
 
       
     </div>
@@ -475,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/11/Python学习笔记/" rel="prev" title="Python学习笔记">
-                Python学习笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/11/Python学习笔记/" rel="prev" title="Python 学习笔记">
+                Python 学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
