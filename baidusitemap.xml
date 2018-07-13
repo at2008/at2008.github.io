@@ -4,14 +4,100 @@
 
     
   <url>
+    <loc>http://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-07-13T12:52:03.922Z</lastmod>
+    <data>
+        <display>
+        <title>VSCdoe+插件 使用配置记录</title>
+        <pubTime>2018-01-03T12:19:01.000Z</pubTime>
+        
+        <tag>VSCode</tag>
+         
+        <tag>插件</tag>
+         
+        <tag>Visual Studio</tag>
+         
+        <tag>Visual Studio Code</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/</loc>
+    <lastmod>2018-07-13T12:48:13.805Z</lastmod>
+    <data>
+        <display>
+        <title>VSCode 字体大小调整</title>
+        <pubTime>2018-07-13T11:04:49.000Z</pubTime>
+        
+        <tag>VSCode</tag>
+         
+        <tag>Visual Studio</tag>
+         
+        <tag>Visual Studio Code</tag>
+         
+        <tag>字体</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-07-12T06:29:28.739Z</lastmod>
+    <lastmod>2018-07-13T10:20:33.233Z</lastmod>
     <data>
         <display>
         <title>Python 学习笔记</title>
         <pubTime>2018-07-11T09:14:52.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2017/12/14/%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/</loc>
+    <lastmod>2018-07-12T16:54:05.035Z</lastmod>
+    <data>
+        <display>
+        <title>推荐2个好看的linux发行版本</title>
+        <pubTime>2017-12-13T17:21:31.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>elementary OS</tag>
+         
+        <tag>feren OS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-07-12T11:29:05.089Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 系统常用工具软件</title>
+        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>工具软件</tag>
          
          
            
@@ -33,25 +119,6 @@
         <tag>C#本质论</tag>
          
         <tag>Essential C#</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2018-07-11T06:37:33.933Z</lastmod>
-    <data>
-        <display>
-        <title>Windows 系统常用工具软件</title>
-        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
-        
-        <tag>Windows</tag>
-         
-        <tag>工具软件</tag>
          
          
            
@@ -94,29 +161,6 @@
         <tag>C#本质论</tag>
          
         <tag>Essential C#</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-01-07T08:51:07.341Z</lastmod>
-    <data>
-        <display>
-        <title>VSCdoe+插件 使用配置记录</title>
-        <pubTime>2018-01-03T12:19:01.000Z</pubTime>
-        
-        <tag>VSCode</tag>
-         
-        <tag>插件</tag>
-         
-        <tag>Visual Studio</tag>
-         
-        <tag>Visual Studio Code</tag>
          
          
            
@@ -262,27 +306,6 @@
         <tag>C#本质论</tag>
          
         <tag>Essential C#</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/14/%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/</loc>
-    <lastmod>2017-12-18T16:14:13.030Z</lastmod>
-    <data>
-        <display>
-        <title>推荐2个好看的linux发行版本</title>
-        <pubTime>2017-12-13T17:21:31.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>elementary OS</tag>
-         
-        <tag>feren OS</tag>
          
          
            

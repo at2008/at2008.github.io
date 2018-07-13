@@ -93,10 +93,12 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="HTML 中 CSS Class 智能提示1.安装插件：HTML CSS Support 2.设置中添加以下代码： 12345&quot;editor.parameterHints&quot;: true,&quot;editor.quickSuggestions&quot;: &amp;#123;    &quot;other&quot;: true,    &quot;comments&quot;: true,    &quot;strings&quot;: true">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-07T08:51:07.341Z">
+<meta property="og:image" content="http://slowread.cn/images/material/workbench.main.css.png">
+<meta property="og:updated_time" content="2018-07-13T12:52:03.922Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VSCdoe+插件 使用配置记录">
 <meta name="twitter:description" content="HTML 中 CSS Class 智能提示1.安装插件：HTML CSS Support 2.设置中添加以下代码： 12345&quot;editor.parameterHints&quot;: true,&quot;editor.quickSuggestions&quot;: &amp;#123;    &quot;other&quot;: true,    &quot;comments&quot;: true,    &quot;strings&quot;: true">
+<meta name="twitter:image" content="http://slowread.cn/images/material/workbench.main.css.png">
 
 
 
@@ -391,6 +393,17 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"window.title": "$&#123;activeEditorLong&#125;"</span><br></pre></td></tr></table></figure>
 <h1 id="文件自动保存"><a href="#文件自动保存" class="headerlink" title="文件自动保存"></a>文件自动保存</h1><p>设置中添加以下代码：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">"files.autoSave": "onFocusChange"</span><br></pre></td></tr></table></figure>
+<h1 id="VSCdoe-菜单-侧边栏等字体大小调整"><a href="#VSCdoe-菜单-侧边栏等字体大小调整" class="headerlink" title="VSCdoe 菜单/侧边栏等字体大小调整"></a>VSCdoe 菜单/侧边栏等字体大小调整</h1><p>VSCode 默认的菜单、左侧管理器等栏目字体是11px，感觉字体稍小，尤其在暗调主题下，难以识别。可以根据自己的需要修改默认配置文件，得到合适的显示效果。</p>
+<h2 id="修改样式文件修改权限"><a href="#修改样式文件修改权限" class="headerlink" title="修改样式文件修改权限"></a>修改样式文件修改权限</h2><ul>
+<li>找到VSCode工作区配置文件，位于:<code>安装目录\VSCode\resources\app\out\vs\workbench\workbench.main.css</code></li>
+<li>对文件增加修改权限，具体：右键属性–&gt;安全–&gt;编辑(更改权限)–见下图</li>
+</ul>
+<p><img src="http://slowread.cn/images/material/workbench.main.css.png" alt="image"></p>
+<h2 id="修改样式文件配置"><a href="#修改样式文件配置" class="headerlink" title="修改样式文件配置"></a>修改样式文件配置</h2><ul>
+<li>打开<code>workbench.main.css</code>文件，搜索/替换所有<code>11px</code>为<code>12px</code>或者自己认为合适的值，这样比较简单，总共有超过30多处</li>
+<li>两外一种方式：菜单-&gt;帮助-&gt;切换开发人员工具，找到需要修改的地方对应的样式表文件内容并修改</li>
+</ul>
+
       
     </div>
     
@@ -573,7 +586,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -586,7 +599,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -641,7 +654,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-中-CSS-Class-智能提示"><span class="nav-number">1.</span> <span class="nav-text">HTML 中 CSS Class 智能提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看-HTML-样式在-CSS-中的定义"><span class="nav-number">2.</span> <span class="nav-text">查看 HTML 样式在 CSS 中的定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#不同代码文件-Tab-键设定"><span class="nav-number">3.</span> <span class="nav-text">不同代码文件 Tab 键设定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标题栏显示文件全路径名"><span class="nav-number">4.</span> <span class="nav-text">标题栏显示文件全路径名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件自动保存"><span class="nav-number">5.</span> <span class="nav-text">文件自动保存</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML-中-CSS-Class-智能提示"><span class="nav-number">1.</span> <span class="nav-text">HTML 中 CSS Class 智能提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看-HTML-样式在-CSS-中的定义"><span class="nav-number">2.</span> <span class="nav-text">查看 HTML 样式在 CSS 中的定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#不同代码文件-Tab-键设定"><span class="nav-number">3.</span> <span class="nav-text">不同代码文件 Tab 键设定</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标题栏显示文件全路径名"><span class="nav-number">4.</span> <span class="nav-text">标题栏显示文件全路径名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件自动保存"><span class="nav-number">5.</span> <span class="nav-text">文件自动保存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#VSCdoe-菜单-侧边栏等字体大小调整"><span class="nav-number">6.</span> <span class="nav-text">VSCdoe 菜单/侧边栏等字体大小调整</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改样式文件修改权限"><span class="nav-number">6.1.</span> <span class="nav-text">修改样式文件修改权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改样式文件配置"><span class="nav-number">6.2.</span> <span class="nav-text">修改样式文件配置</span></a></li></ol></li></ol></div>
             
 
           </div>

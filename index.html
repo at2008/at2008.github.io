@@ -301,6 +301,146 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2018/07/13/VSCode字体大小调整/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="At2008">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢读慢写">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/13/VSCode字体大小调整/" itemprop="url">VSCode 字体大小调整</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-13T19:04:49+08:00">
+                2018-07-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/13/VSCode字体大小调整/" class="leancloud_visitors" data-flag-title="VSCode 字体大小调整">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>VSCode 默认的菜单、左侧管理器等栏目字体是11px，感觉字体稍小，尤其在暗调主题下，难以识别。可以根据自己的需要修改默认配置文件，得到合适的显示效果。</p>
+<h2 id="修改样式文件修改权限"><a href="#修改样式文件修改权限" class="headerlink" title="修改样式文件修改权限"></a>修改样式文件修改权限</h2><ul>
+<li>找到VSCode工作区配置文件，位于:<code>安装目录\VSCode\resources\app\out\vs\workbench\workbench.main.css</code></li>
+<li>对文件增加修改权限，具体：右键属性–&gt;安全–&gt;编辑(更改权限)–见下图</li>
+</ul>
+<p><img src="http://slowread.cn/images/material/workbench.main.css.png" alt="image"></p>
+<h2 id="修改样式文件配置"><a href="#修改样式文件配置" class="headerlink" title="修改样式文件配置"></a>修改样式文件配置</h2><ul>
+<li>打开<code>workbench.main.css</code>文件，搜索/替换所有<code>11px</code>为<code>12px</code>或者自己认为合适的值，这样比较简单，总共有超过30多处</li>
+<li>两外一种方式：菜单-&gt;帮助-&gt;切换开发人员工具，找到需要修改的地方对应的样式表文件内容并修改</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://slowread.cn/2018/07/11/Python学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -385,6 +525,28 @@
           <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h3><ul>
 <li>尽量使用小写的Python变量名</li>
 </ul>
+<h3 id="括号与数据类型"><a href="#括号与数据类型" class="headerlink" title="括号与数据类型"></a>括号与数据类型</h3><table>
+<thead>
+<tr>
+<th>括号</th>
+<th>数据类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[]</td>
+<td>列表</td>
+</tr>
+<tr>
+<td>{}</td>
+<td>字典</td>
+</tr>
+<tr>
+<td>()</td>
+<td>元组</td>
+</tr>
+</tbody>
+</table>
 <h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
 <p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
@@ -846,153 +1008,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://slowread.cn/2017/12/26/CSharp本质论笔记-第6章-继承/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="At2008">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢读慢写">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/26/CSharp本质论笔记-第6章-继承/" itemprop="url">C#本质论笔记 第6章 继承</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-26T10:41:00+08:00">
-                2017-12-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2017/12/26/CSharp本质论笔记-第6章-继承/" class="leancloud_visitors" data-flag-title="C#本质论笔记 第6章 继承">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>通过继承，可以创建重用、扩展和修改在其他类中定义的行为的新类。继承主要实现重用代码，节省开发时间。C#中的继承符合下列规则：</p>
-<ul>
-<li>继承是可传递的。如果C从B中派生，B又从A中派生，那么C不仅继承了B中声明的成员，同样也继承了A中的成员。Object类作为所有类的基类。</li>
-<li>派生类应当是对基类的扩展。派生类可以添加新的成员，但不能除去已经继承的成员的定义。</li>
-<li>构造函数和析构函数不能被继承。除此之外的其它成员，不论对它们定义了怎样的访问方式，都能被继承。基类中成员的访问方式只能决定派生类能否访问它们。</li>
-<li>派生类如果定义了与继承而来的成员同名的新成员，就可以覆盖已继承的成员。但这并不因为这派生类删除了这些成员，只是不能再访问这些成员。</li>
-<li>类可以定义虚文法、虚属性以及虚索引指示器，它的派生类能够重载这些成员，从而实现类可以展示出多态性。</li>
-</ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/26/CSharp本质论笔记-第6章-继承/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1044,7 +1064,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1057,7 +1077,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
