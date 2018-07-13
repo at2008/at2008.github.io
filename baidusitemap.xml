@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-07-13T12:52:03.922Z</lastmod>
+    <lastmod>2018-07-13T12:56:07.870Z</lastmod>
     <data>
         <display>
         <title>VSCdoe+插件 使用配置记录</title>
@@ -27,8 +27,25 @@
 
     
   <url>
+    <loc>http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2018-07-13T12:55:25.850Z</lastmod>
+    <data>
+        <display>
+        <title>Python 学习笔记</title>
+        <pubTime>2018-07-11T09:14:52.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/</loc>
-    <lastmod>2018-07-13T12:48:13.805Z</lastmod>
+    <lastmod>2018-07-13T12:55:04.908Z</lastmod>
     <data>
         <display>
         <title>VSCode 字体大小调整</title>
@@ -41,23 +58,6 @@
         <tag>Visual Studio Code</tag>
          
         <tag>字体</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-07-13T10:20:33.233Z</lastmod>
-    <data>
-        <display>
-        <title>Python 学习笔记</title>
-        <pubTime>2018-07-11T09:14:52.000Z</pubTime>
-        
-        <tag>Python</tag>
          
          
            

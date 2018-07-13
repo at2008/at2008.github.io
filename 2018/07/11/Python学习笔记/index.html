@@ -85,18 +85,18 @@
 
 
 
-<meta name="description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组    python交互模式下清屏在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。 在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏">
+<meta name="description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 学习笔记">
 <meta property="og:url" content="http://slowread.cn/2018/07/11/Python学习笔记/index.html">
 <meta property="og:site_name" content="慢读慢写">
-<meta property="og:description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组    python交互模式下清屏在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。 在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏">
+<meta property="og:description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-13T10:20:33.233Z">
+<meta property="og:updated_time" content="2018-07-13T12:55:25.850Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python 学习笔记">
-<meta name="twitter:description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组    python交互模式下清屏在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。 在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏">
+<meta name="twitter:description" content="注意事项变量命名 尽量使用小写的Python变量名  括号与数据类型   括号 数据类型     [] 列表   {} 字典   () 元组">
 
 
 
@@ -405,12 +405,13 @@
 </tr>
 </tbody>
 </table>
+<a id="more"></a>
 <h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
 <p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
 <p>但是此时shell中的状态是：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+<!-- more -->
 <p>首行会有一个0。这个0实际上是os.system()的返回值，0是成功，非零即error code（具体os.system()与命令返回值的对应关系可参考<a href="http://xingyunbaijunwei.blog.163.com/blog/static/76538067201341342330373/" target="_blank" rel="noopener">这里</a>）。</p>
 <p> 可以存储这个返回值，不让其打印出来：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>t = os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>

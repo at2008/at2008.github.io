@@ -382,19 +382,18 @@
 
       
         
-          
-            <p>VSCode 默认的菜单、左侧管理器等栏目字体是11px，感觉字体稍小，尤其在暗调主题下，难以识别。可以根据自己的需要修改默认配置文件，得到合适的显示效果。</p>
+          <p>VSCode 默认的菜单、左侧管理器等栏目字体是11px，感觉字体稍小，尤其在暗调主题下，难以识别。可以根据自己的需要修改默认配置文件，得到合适的显示效果。</p>
 <h2 id="修改样式文件修改权限"><a href="#修改样式文件修改权限" class="headerlink" title="修改样式文件修改权限"></a>修改样式文件修改权限</h2><ul>
 <li>找到VSCode工作区配置文件，位于:<code>安装目录\VSCode\resources\app\out\vs\workbench\workbench.main.css</code></li>
 <li>对文件增加修改权限，具体：右键属性–&gt;安全–&gt;编辑(更改权限)–见下图</li>
 </ul>
-<p><img src="http://slowread.cn/images/material/workbench.main.css.png" alt="image"></p>
-<h2 id="修改样式文件配置"><a href="#修改样式文件配置" class="headerlink" title="修改样式文件配置"></a>修改样式文件配置</h2><ul>
-<li>打开<code>workbench.main.css</code>文件，搜索/替换所有<code>11px</code>为<code>12px</code>或者自己认为合适的值，这样比较简单，总共有超过30多处</li>
-<li>两外一种方式：菜单-&gt;帮助-&gt;切换开发人员工具，找到需要修改的地方对应的样式表文件内容并修改</li>
-</ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/13/VSCode字体大小调整/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -547,11 +546,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="python交互模式下清屏"><a href="#python交互模式下清屏" class="headerlink" title="python交互模式下清屏"></a>python交互模式下清屏</h2><p>在Linux shell中，清屏操作是clear；在Win cmd中，清屏操作是cls。</p>
-<p>在交互模式中使用python，如果要清屏，可以import os，通过os.system()来调用系统命令clear或者cls来实现清屏。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>os.system(<span class="string">'clear'</span>)</span><br></pre></td></tr></table></figure>
-<p>但是此时shell中的状态是：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span></span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/11/Python学习笔记/#more" rel="contents">
