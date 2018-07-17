@@ -4,16 +4,20 @@
 
     
   <url>
-    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2018-07-16T07:39:38.642Z</lastmod>
+    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2018-07-17T15:26:45.851Z</lastmod>
     <data>
         <display>
-        <title>Windows 系统常用工具软件</title>
-        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
+        <title>Visual Studio Code VSCode 常用 插件 扩展</title>
+        <pubTime>2017-12-14T04:56:48.000Z</pubTime>
         
-        <tag>Windows</tag>
+        <tag>VSCode</tag>
          
-        <tag>工具软件</tag>
+        <tag>插件</tag>
+         
+        <tag>Visual Studio</tag>
+         
+        <tag>Visual Studio Code</tag>
          
          
            
@@ -24,13 +28,32 @@
     
   <url>
     <loc>http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2018-07-16T07:15:51.182Z</lastmod>
+    <lastmod>2018-07-17T14:35:32.817Z</lastmod>
     <data>
         <display>
         <title>Python 学习笔记</title>
         <pubTime>2018-07-11T09:14:52.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2018-07-16T07:39:38.642Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 系统常用工具软件</title>
+        <pubTime>2017-12-19T06:04:17.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>工具软件</tag>
          
          
            
@@ -69,29 +92,6 @@
         <display>
         <title>VSCdoe+插件 使用配置记录</title>
         <pubTime>2018-01-03T12:19:01.000Z</pubTime>
-        
-        <tag>VSCode</tag>
-         
-        <tag>插件</tag>
-         
-        <tag>Visual Studio</tag>
-         
-        <tag>Visual Studio Code</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2018-07-13T13:13:43.038Z</lastmod>
-    <data>
-        <display>
-        <title>Visual Studio Code VSCode 常用 插件 扩展</title>
-        <pubTime>2017-12-14T04:56:48.000Z</pubTime>
         
         <tag>VSCode</tag>
          
