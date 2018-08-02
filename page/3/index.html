@@ -596,7 +596,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-02 23:45:56" itemprop="dateModified" datetime="2018-08-02T23:45:56+08:00">2018-08-02</time>
+                <time title="修改时间：2018-08-03 00:12:44" itemprop="dateModified" datetime="2018-08-03T00:12:44+08:00">2018-08-03</time>
               
             
           </span>
@@ -644,8 +644,21 @@
           <h1 id="npm-安装-hexo-卡住问题解决"><a href="#npm-安装-hexo-卡住问题解决" class="headerlink" title="npm 安装 hexo 卡住问题解决"></a>npm 安装 hexo 卡住问题解决</h1><p>用 npm 安装话经常出现卡住而导致无法正常安装，解决办法就是修改 npm 的安装源，这里选择淘宝 NPM 镜像，这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。。</p>
 <pre><code>npm config set registry https://registry.npm.taobao.org
 </code></pre><p>一次解决所有卡顿问题！</p>
-<h1 id="Next-5-x-升级-6-x"><a href="#Next-5-x-升级-6-x" class="headerlink" title="Next 5.x 升级 6.x"></a>Next 5.x 升级 6.x</h1><p>下载 <a href="https://github.com/theme-next/hexo-theme-next/releases/latest" target="_blank" rel="noopener">Next 6 主题</a>，</p>
-<h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>next/source/css/_schemes/Pisces/_layout.styl</code> 文件中下面的字段内容：</p>
+<h1 id="Next-5-x-升级-6-x"><a href="#Next-5-x-升级-6-x" class="headerlink" title="Next 5.x 升级 6.x"></a>Next 5.x 升级 6.x</h1><ul>
+<li>下载 <a href="https://github.com/theme-next/hexo-theme-next/releases/latest" target="_blank" rel="noopener">Next 6 主题</a>，解压缩并重命名为next6，放置于 <code>\themes\</code> 目录下，这样保留旧版本的 next 主题，可以随时切换回去。</li>
+<li>修改<strong>站点</strong>配置文件 <code>_config.yml</code>，指定使用新主题</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next6</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改<strong>主题</strong>配置文件<code>\themes\next6\_config.yml</code>，比较旧版本主题配置文件<code>_config.yml</code>中改动的地方，一一修改到新版本中。</li>
+<li>旧版本主题个性化定制的文件复制到新版本主题对应目录下:<ul>
+<li>next/source/css/_custom/*</li>
+<li>next/source/css/_variables/*</li>
+<li>next/layout/_custom/* </li>
+</ul>
+</li>
+</ul>
+<h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>\themes\next\source\css\_schemes\Pisces\_layout.styl</code> 文件中下面的字段内容：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header</span>&#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
 <p>完整文件参见 <a href="https://github.com/xiao-fang/xiao-fang.github.io/blob/3a95f3919a90bf56738016f9eb8a59e5bfab4a22/themes/next/source/css/_schemes/Pisces/_layout.styl" target="_blank" rel="noopener">这个地址</a>。</p>
           <!--noindex-->
