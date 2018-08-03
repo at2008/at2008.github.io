@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://slowread.cn/2018/08/01/Python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    
+    <lastmod>2018-08-03T07:42:21.431Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2018-08-02T16:12:44.966Z</lastmod>
@@ -79,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://slowread.cn/2018/08/01/Python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    
-    <lastmod>2018-08-02T15:27:41.057Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://slowread.cn/2017/12/26/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC6%E7%AB%A0-%E7%BB%A7%E6%89%BF/</loc>
     
     <lastmod>2018-08-02T15:27:41.056Z</lastmod>
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/</loc>
+    <loc>https://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/</loc>
     
     <lastmod>2018-08-02T15:27:41.054Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/</loc>
+    <loc>https://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/</loc>
     
     <lastmod>2018-08-02T15:27:41.054Z</lastmod>
     
