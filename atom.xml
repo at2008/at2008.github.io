@@ -5,9 +5,9 @@
   <subtitle>漫漫人生</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://slowread.cn/"/>
+  <link href="https://slowread.cn/"/>
   <updated>2018-08-02T15:27:41.057Z</updated>
-  <id>http://slowread.cn/</id>
+  <id>https://slowread.cn/</id>
   
   <author>
     <name>At2008</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Python 正则表达式</title>
-    <link href="http://slowread.cn/2018/08/01/Python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <id>http://slowread.cn/2018/08/01/Python-正则表达式/</id>
+    <link href="https://slowread.cn/2018/08/01/Python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>https://slowread.cn/2018/08/01/Python-正则表达式/</id>
     <published>2018-08-01T06:55:25.000Z</published>
     <updated>2018-08-02T15:27:41.057Z</updated>
     
@@ -52,16 +52,16 @@
     </summary>
     
     
-      <category term="Python" scheme="http://slowread.cn/tags/Python/"/>
+      <category term="Python" scheme="https://slowread.cn/tags/Python/"/>
     
-      <category term="正则表达式" scheme="http://slowread.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <category term="正则表达式" scheme="https://slowread.cn/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>清理Visual Studio 2017旧版本离线安装文件</title>
-    <link href="http://slowread.cn/2018/07/28/%E6%B8%85%E7%90%86Visual-Studio-2017%E6%97%A7%E7%89%88%E6%9C%AC%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6/"/>
-    <id>http://slowread.cn/2018/07/28/清理Visual-Studio-2017旧版本离线安装文件/</id>
+    <link href="https://slowread.cn/2018/07/28/%E6%B8%85%E7%90%86Visual-Studio-2017%E6%97%A7%E7%89%88%E6%9C%AC%E7%A6%BB%E7%BA%BF%E5%AE%89%E8%A3%85%E6%96%87%E4%BB%B6/"/>
+    <id>https://slowread.cn/2018/07/28/清理Visual-Studio-2017旧版本离线安装文件/</id>
     <published>2018-07-27T16:19:22.000Z</published>
     <updated>2018-08-02T15:27:41.065Z</updated>
     
@@ -82,14 +82,14 @@
     </summary>
     
     
-      <category term="Visual Studio" scheme="http://slowread.cn/tags/Visual-Studio/"/>
+      <category term="Visual Studio" scheme="https://slowread.cn/tags/Visual-Studio/"/>
     
   </entry>
   
   <entry>
     <title>VSCode 字体大小调整</title>
-    <link href="http://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/"/>
-    <id>http://slowread.cn/2018/07/13/VSCode字体大小调整/</id>
+    <link href="https://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/"/>
+    <id>https://slowread.cn/2018/07/13/VSCode字体大小调整/</id>
     <published>2018-07-13T11:04:49.000Z</published>
     <updated>2018-08-02T15:27:41.061Z</updated>
     
@@ -106,20 +106,20 @@
     </summary>
     
     
-      <category term="VSCode" scheme="http://slowread.cn/tags/VSCode/"/>
+      <category term="VSCode" scheme="https://slowread.cn/tags/VSCode/"/>
     
-      <category term="Visual Studio" scheme="http://slowread.cn/tags/Visual-Studio/"/>
+      <category term="Visual Studio" scheme="https://slowread.cn/tags/Visual-Studio/"/>
     
-      <category term="Visual Studio Code" scheme="http://slowread.cn/tags/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://slowread.cn/tags/Visual-Studio-Code/"/>
     
-      <category term="字体" scheme="http://slowread.cn/tags/%E5%AD%97%E4%BD%93/"/>
+      <category term="字体" scheme="https://slowread.cn/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>Python 学习笔记</title>
-    <link href="http://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://slowread.cn/2018/07/11/Python学习笔记/</id>
+    <link href="https://slowread.cn/2018/07/11/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://slowread.cn/2018/07/11/Python学习笔记/</id>
     <published>2018-07-11T09:14:52.000Z</published>
     <updated>2018-08-02T09:58:15.334Z</updated>
     
@@ -161,14 +161,14 @@
     </summary>
     
     
-      <category term="Python" scheme="http://slowread.cn/tags/Python/"/>
+      <category term="Python" scheme="https://slowread.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>CSharp本质论笔记 第8章 值类型</title>
-    <link href="http://slowread.cn/2018/05/12/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://slowread.cn/2018/05/12/CSharp本质论笔记-第8章-值类型/</id>
+    <link href="https://slowread.cn/2018/05/12/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC8%E7%AB%A0-%E5%80%BC%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://slowread.cn/2018/05/12/CSharp本质论笔记-第8章-值类型/</id>
     <published>2018-05-12T12:51:15.000Z</published>
     <updated>2018-08-02T15:27:41.059Z</updated>
     
@@ -184,18 +184,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>VSCdoe+插件 使用配置记录</title>
-    <link href="http://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
-    <id>http://slowread.cn/2018/01/03/VSCdoe-插件-使用配置记录/</id>
+    <link href="https://slowread.cn/2018/01/03/VSCdoe-%E6%8F%92%E4%BB%B6-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
+    <id>https://slowread.cn/2018/01/03/VSCdoe-插件-使用配置记录/</id>
     <published>2018-01-03T12:19:01.000Z</published>
     <updated>2018-08-02T15:27:41.060Z</updated>
     
@@ -210,20 +210,20 @@
     </summary>
     
     
-      <category term="VSCode" scheme="http://slowread.cn/tags/VSCode/"/>
+      <category term="VSCode" scheme="https://slowread.cn/tags/VSCode/"/>
     
-      <category term="插件" scheme="http://slowread.cn/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="https://slowread.cn/tags/%E6%8F%92%E4%BB%B6/"/>
     
-      <category term="Visual Studio" scheme="http://slowread.cn/tags/Visual-Studio/"/>
+      <category term="Visual Studio" scheme="https://slowread.cn/tags/Visual-Studio/"/>
     
-      <category term="Visual Studio Code" scheme="http://slowread.cn/tags/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://slowread.cn/tags/Visual-Studio-Code/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第7章 接口</title>
-    <link href="http://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/"/>
-    <id>http://slowread.cn/2017/12/28/CSharp本质论笔记-第7章-接口/</id>
+    <link href="https://slowread.cn/2017/12/28/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC7%E7%AB%A0-%E6%8E%A5%E5%8F%A3/"/>
+    <id>https://slowread.cn/2017/12/28/CSharp本质论笔记-第7章-接口/</id>
     <published>2017-12-28T13:43:32.000Z</published>
     <updated>2018-08-02T15:27:41.054Z</updated>
     
@@ -242,18 +242,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第6章 继承</title>
-    <link href="http://slowread.cn/2017/12/26/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC6%E7%AB%A0-%E7%BB%A7%E6%89%BF/"/>
-    <id>http://slowread.cn/2017/12/26/CSharp本质论笔记-第6章-继承/</id>
+    <link href="https://slowread.cn/2017/12/26/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC6%E7%AB%A0-%E7%BB%A7%E6%89%BF/"/>
+    <id>https://slowread.cn/2017/12/26/CSharp本质论笔记-第6章-继承/</id>
     <published>2017-12-26T02:41:00.000Z</published>
     <updated>2018-08-02T15:27:41.056Z</updated>
     
@@ -273,18 +273,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第5章 类</title>
-    <link href="http://slowread.cn/2017/12/22/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC5%E7%AB%A0-%E7%B1%BB/"/>
-    <id>http://slowread.cn/2017/12/22/CSharp本质论笔记-第5章-类/</id>
+    <link href="https://slowread.cn/2017/12/22/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC5%E7%AB%A0-%E7%B1%BB/"/>
+    <id>https://slowread.cn/2017/12/22/CSharp本质论笔记-第5章-类/</id>
     <published>2017-12-22T05:20:40.000Z</published>
     <updated>2018-08-02T15:27:41.067Z</updated>
     
@@ -299,18 +299,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>Windows 系统常用工具软件</title>
-    <link href="http://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://slowread.cn/2017/12/19/Windows-系统常用工具软件/</id>
+    <link href="https://slowread.cn/2017/12/19/Windows-%E7%B3%BB%E7%BB%9F%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://slowread.cn/2017/12/19/Windows-系统常用工具软件/</id>
     <published>2017-12-19T06:04:17.000Z</published>
     <updated>2018-08-02T15:27:41.063Z</updated>
     
@@ -332,16 +332,16 @@
     </summary>
     
     
-      <category term="Windows" scheme="http://slowread.cn/tags/Windows/"/>
+      <category term="Windows" scheme="https://slowread.cn/tags/Windows/"/>
     
-      <category term="工具软件" scheme="http://slowread.cn/tags/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+      <category term="工具软件" scheme="https://slowread.cn/tags/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第4章 方法和参数</title>
-    <link href="http://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/"/>
-    <id>http://slowread.cn/2017/12/19/CSharp本质论笔记-第4章-方法和参数/</id>
+    <link href="https://slowread.cn/2017/12/19/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC4%E7%AB%A0-%E6%96%B9%E6%B3%95%E5%92%8C%E5%8F%82%E6%95%B0/"/>
+    <id>https://slowread.cn/2017/12/19/CSharp本质论笔记-第4章-方法和参数/</id>
     <published>2017-12-18T16:02:07.000Z</published>
     <updated>2018-08-02T15:27:41.054Z</updated>
     
@@ -372,18 +372,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>Hexo Next 使用配置</title>
-    <link href="http://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
-    <id>http://slowread.cn/2017/12/18/Hexo-Next-使用配置/</id>
+    <link href="https://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/"/>
+    <id>https://slowread.cn/2017/12/18/Hexo-Next-使用配置/</id>
     <published>2017-12-18T05:53:32.000Z</published>
     <updated>2018-08-02T16:12:44.966Z</updated>
     
@@ -415,20 +415,20 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://slowread.cn/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://slowread.cn/tags/Hexo/"/>
     
-      <category term="Next 主题" scheme="http://slowread.cn/tags/Next-%E4%B8%BB%E9%A2%98/"/>
+      <category term="Next 主题" scheme="https://slowread.cn/tags/Next-%E4%B8%BB%E9%A2%98/"/>
     
-      <category term="Next 升级" scheme="http://slowread.cn/tags/Next-%E5%8D%87%E7%BA%A7/"/>
+      <category term="Next 升级" scheme="https://slowread.cn/tags/Next-%E5%8D%87%E7%BA%A7/"/>
     
-      <category term="npm" scheme="http://slowread.cn/tags/npm/"/>
+      <category term="npm" scheme="https://slowread.cn/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第3章 操作符和控制流</title>
-    <link href="http://slowread.cn/2017/12/17/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC3%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E6%8E%A7%E5%88%B6%E6%B5%81/"/>
-    <id>http://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/</id>
+    <link href="https://slowread.cn/2017/12/17/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC3%E7%AB%A0-%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%92%8C%E6%8E%A7%E5%88%B6%E6%B5%81/"/>
+    <id>https://slowread.cn/2017/12/17/CSharp本质论笔记-第3章-操作符和控制流/</id>
     <published>2017-12-16T17:05:16.000Z</published>
     <updated>2018-08-02T15:27:41.052Z</updated>
     
@@ -467,18 +467,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>Visual Studio Code VSCode 常用 插件 扩展</title>
-    <link href="http://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
-    <id>http://slowread.cn/2017/12/14/Visual-Studio-Code-常用插件/</id>
+    <link href="https://slowread.cn/2017/12/14/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://slowread.cn/2017/12/14/Visual-Studio-Code-常用插件/</id>
     <published>2017-12-14T04:56:48.000Z</published>
     <updated>2018-08-02T15:27:41.062Z</updated>
     
@@ -502,20 +502,20 @@
     </summary>
     
     
-      <category term="VSCode" scheme="http://slowread.cn/tags/VSCode/"/>
+      <category term="VSCode" scheme="https://slowread.cn/tags/VSCode/"/>
     
-      <category term="插件" scheme="http://slowread.cn/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="https://slowread.cn/tags/%E6%8F%92%E4%BB%B6/"/>
     
-      <category term="Visual Studio" scheme="http://slowread.cn/tags/Visual-Studio/"/>
+      <category term="Visual Studio" scheme="https://slowread.cn/tags/Visual-Studio/"/>
     
-      <category term="Visual Studio Code" scheme="http://slowread.cn/tags/Visual-Studio-Code/"/>
+      <category term="Visual Studio Code" scheme="https://slowread.cn/tags/Visual-Studio-Code/"/>
     
   </entry>
   
   <entry>
     <title>推荐2个好看的linux发行版本</title>
-    <link href="http://slowread.cn/2017/12/14/%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
-    <id>http://slowread.cn/2017/12/14/推荐2个好看的linux发行版本/</id>
+    <link href="https://slowread.cn/2017/12/14/%E6%8E%A8%E8%8D%902%E4%B8%AA%E5%A5%BD%E7%9C%8B%E7%9A%84linux%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC/"/>
+    <id>https://slowread.cn/2017/12/14/推荐2个好看的linux发行版本/</id>
     <published>2017-12-13T17:21:31.000Z</published>
     <updated>2018-08-02T15:27:41.064Z</updated>
     
@@ -530,18 +530,18 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://slowread.cn/tags/Linux/"/>
+      <category term="Linux" scheme="https://slowread.cn/tags/Linux/"/>
     
-      <category term="elementary OS" scheme="http://slowread.cn/tags/elementary-OS/"/>
+      <category term="elementary OS" scheme="https://slowread.cn/tags/elementary-OS/"/>
     
-      <category term="feren OS" scheme="http://slowread.cn/tags/feren-OS/"/>
+      <category term="feren OS" scheme="https://slowread.cn/tags/feren-OS/"/>
     
   </entry>
   
   <entry>
     <title>NumLock灯在多个linux版本中的不同设置方法</title>
-    <link href="http://slowread.cn/2017/12/14/NumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/"/>
-    <id>http://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/</id>
+    <link href="https://slowread.cn/2017/12/14/NumLock%E7%81%AF%E5%9C%A8%E5%A4%9A%E4%B8%AAlinux%E7%89%88%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%8D%E5%90%8C%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95/"/>
+    <id>https://slowread.cn/2017/12/14/NumLock灯在多个linux版本中的不同设置方法/</id>
     <published>2017-12-13T16:27:18.000Z</published>
     <updated>2018-08-02T15:27:41.058Z</updated>
     
@@ -571,16 +571,16 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://slowread.cn/tags/Linux/"/>
+      <category term="Linux" scheme="https://slowread.cn/tags/Linux/"/>
     
-      <category term="NumLock" scheme="http://slowread.cn/tags/NumLock/"/>
+      <category term="NumLock" scheme="https://slowread.cn/tags/NumLock/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第2章 数据类型</title>
-    <link href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>http://slowread.cn/2017/12/13/CSharp本质论笔记-第2章-数据类型/</id>
+    <link href="https://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC2%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://slowread.cn/2017/12/13/CSharp本质论笔记-第2章-数据类型/</id>
     <published>2017-12-13T08:27:35.000Z</published>
     <updated>2018-08-02T15:27:41.066Z</updated>
     
@@ -593,18 +593,18 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
   <entry>
     <title>C#本质论笔记 第1章 C#概述</title>
-    <link href="http://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/"/>
-    <id>http://slowread.cn/2017/12/13/CSharp本质论笔记-第1章-CSharp概述/</id>
+    <link href="https://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/"/>
+    <id>https://slowread.cn/2017/12/13/CSharp本质论笔记-第1章-CSharp概述/</id>
     <published>2017-12-13T05:35:26.000Z</published>
     <updated>2018-08-02T15:27:41.050Z</updated>
     
@@ -625,11 +625,11 @@
     </summary>
     
     
-      <category term="C#" scheme="http://slowread.cn/tags/C/"/>
+      <category term="C#" scheme="https://slowread.cn/tags/C/"/>
     
-      <category term="C#本质论" scheme="http://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
+      <category term="C#本质论" scheme="https://slowread.cn/tags/C-%E6%9C%AC%E8%B4%A8%E8%AE%BA/"/>
     
-      <category term="Essential C#" scheme="http://slowread.cn/tags/Essential-C/"/>
+      <category term="Essential C#" scheme="https://slowread.cn/tags/Essential-C/"/>
     
   </entry>
   
