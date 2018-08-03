@@ -13,8 +13,8 @@ $(function () {
 
 			var view = {
 				date: new Date(y, m, d).toLocaleDateString(),
-				preview_url: 'http://www.bing.com' + el.url,
-				download_url: 'http://www.bing.com/hpwp/' + el.hsh,
+				preview_url: 'https://www.bing.com' + el.url,
+				download_url: 'https://www.bing.com/hpwp/' + el.hsh,
 				caption: el.copyright,
 				caption_url: el.copyrightlink,
 				rendered: false
