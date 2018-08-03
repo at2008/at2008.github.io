@@ -4,31 +4,8 @@
 
     
   <url>
-    <loc>https://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/</loc>
-    <lastmod>2018-08-03T14:43:00.698Z</lastmod>
-    <data>
-        <display>
-        <title>VSCode 字体大小调整</title>
-        <pubTime>2018-07-13T11:04:49.000Z</pubTime>
-        
-        <tag>VSCode</tag>
-         
-        <tag>Visual Studio</tag>
-         
-        <tag>Visual Studio Code</tag>
-         
-        <tag>字体</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2018-08-03T14:28:59.641Z</lastmod>
+    <lastmod>2018-08-03T15:15:51.215Z</lastmod>
     <data>
         <display>
         <title>Hexo Next 使用配置</title>
@@ -45,6 +22,29 @@
         <tag>Github Pages</tag>
          
         <tag>HTTPS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://slowread.cn/2018/07/13/VSCode%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E8%B0%83%E6%95%B4/</loc>
+    <lastmod>2018-08-03T14:43:00.698Z</lastmod>
+    <data>
+        <display>
+        <title>VSCode 字体大小调整</title>
+        <pubTime>2018-07-13T11:04:49.000Z</pubTime>
+        
+        <tag>VSCode</tag>
+         
+        <tag>Visual Studio</tag>
+         
+        <tag>Visual Studio Code</tag>
+         
+        <tag>字体</tag>
          
          
            
