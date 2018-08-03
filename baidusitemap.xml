@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>https://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2018-08-03T14:28:59.641Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo Next 使用配置</title>
+        <pubTime>2017-12-18T05:53:32.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Next 主题</tag>
+         
+        <tag>Next 升级</tag>
+         
+        <tag>npm</tag>
+         
+        <tag>Github Pages</tag>
+         
+        <tag>HTTPS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://slowread.cn/2017/12/13/CSharp%E6%9C%AC%E8%B4%A8%E8%AE%BA%E7%AC%94%E8%AE%B0-%E7%AC%AC1%E7%AB%A0-CSharp%E6%A6%82%E8%BF%B0/</loc>
     <lastmod>2018-08-03T13:46:36.980Z</lastmod>
     <data>
@@ -218,33 +245,6 @@
         <tag>Python</tag>
          
         <tag>正则表达式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://slowread.cn/2017/12/18/Hexo-Next-%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2018-08-03T12:42:10.410Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo Next 使用配置</title>
-        <pubTime>2017-12-18T05:53:32.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>Next 主题</tag>
-         
-        <tag>Next 升级</tag>
-         
-        <tag>npm</tag>
-         
-        <tag>Github Pages</tag>
-         
-        <tag>HTTPS</tag>
          
          
            
