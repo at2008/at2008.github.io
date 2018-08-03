@@ -120,7 +120,7 @@
 <meta property="og:site_name" content="慢读慢写">
 <meta property="og:description" content="Github Pages 启用 HTTPS GitHub Pages 现在已经免费提供数字证书，在 Github Pages 上创建的个人站点可以免费支持 HTTPS，操作流程如下：   到 DNS 服务商网站，修改域名解析，删除原来的 A 记录，按照下面格式增加 4 条 A 记录，例如你的域名是 example.com ，效果如下表所示：     类型 名称 值     A example.co">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-03T08:44:47.635Z">
+<meta property="og:updated_time" content="2018-08-03T08:57:44.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Next 使用配置">
 <meta name="twitter:description" content="Github Pages 启用 HTTPS GitHub Pages 现在已经免费提供数字证书，在 Github Pages 上创建的个人站点可以免费支持 HTTPS，操作流程如下：   到 DNS 服务商网站，修改域名解析，删除原来的 A 记录，按照下面格式增加 4 条 A 记录，例如你的域名是 example.com ，效果如下表所示：     类型 名称 值     A example.co">
@@ -408,7 +408,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-03 16:44:47" itemprop="dateModified" datetime="2018-08-03T16:44:47+08:00">2018-08-03</time>
+                <time title="修改时间：2018-08-03 16:57:44" itemprop="dateModified" datetime="2018-08-03T16:57:44+08:00">2018-08-03</time>
               
             
           </span>
@@ -517,6 +517,10 @@
 <li>next/layout/_custom/*</li>
 </ul>
 </li>
+<li><p>执行命令:</p>
+<pre><code>hexo clean  # 清理旧文件
+hexo d -g   # 重新编译/发布
+</code></pre></li>
 </ul>
 <h1 id="Pisces子主题页面留白太多问题"><a href="#Pisces子主题页面留白太多问题" class="headerlink" title="Pisces子主题页面留白太多问题"></a>Pisces子主题页面留白太多问题</h1><p>修改 <code>\themes\next\source\css\_schemes\Pisces\_layout.styl</code> 文件中下面的字段内容：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.header</span>&#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-class">.main-inner</span> &#123; <span class="attribute">width</span>: <span class="number">80%</span>; &#125; <span class="comment">/* 80% */</span></span><br><span class="line"><span class="selector-class">.content-wrap</span> &#123; <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 260px); &#125;</span><br></pre></td></tr></table></figure>
