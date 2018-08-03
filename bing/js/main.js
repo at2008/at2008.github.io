@@ -1,7 +1,7 @@
 $(function () {
-	var bing_url = 'http://www.bing.com/HPImageArchive.aspx?format=js&n=8';
+	var bing_url = 'https://www.bing.com/HPImageArchive.aspx?format=js&n=8';
 	var yql = 'SELECT * FROM json WHERE url="' + bing_url + '"';
-	var url = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(yql) + '&format=json&callback=?';
+	var url = 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(yql) + '&format=json&callback=?';
 
 	$.getJSON(url, function (response) {
 		var bing = response.query.results.json;
