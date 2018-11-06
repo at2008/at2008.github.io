@@ -487,11 +487,11 @@ hexo d -g   # 重新编译/发布
     
       <category term="Next 升级" scheme="https://slowread.cn/tags/Next-%E5%8D%87%E7%BA%A7/"/>
     
-      <category term="npm" scheme="https://slowread.cn/tags/npm/"/>
-    
       <category term="Github Pages" scheme="https://slowread.cn/tags/Github-Pages/"/>
     
       <category term="HTTPS" scheme="https://slowread.cn/tags/HTTPS/"/>
+    
+      <category term="npm" scheme="https://slowread.cn/tags/npm/"/>
     
   </entry>
   
